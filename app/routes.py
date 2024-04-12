@@ -1,5 +1,8 @@
 from app import webserver
 from flask import request, jsonify
+from logging.handlers import RotatingFileHandler
+import time
+from app.logger import logger
 
 import os
 import json
@@ -36,7 +39,18 @@ def get_response(job_id):
     #    })
 
     # If not, return running status
-    return jsonify({'status': 'NotImplemented'})
+    if not int(job_id) in webserver.tasks_runner.doneTasks.keys() and not int(job_id) in webserver.tasks_runner.pendingTasks:
+        logger.error(f"Invalid job_id {job_id}")
+        return jsonify({'status': 'error', 'reason': 'Invalid job_id'})
+    
+    # Check if job is running
+    if not int(job_id) in webserver.tasks_runner.doneTasks:
+        logger.info(f"Job {job_id} is still running")
+        return jsonify({'status': 'running'})
+
+    # If job is done, return the result
+    logger.info(f"Job {job_id} is done")
+    return jsonify({'status': 'done', 'data': webserver.tasks_runner.doneTasks[int(job_id)]})
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
@@ -48,8 +62,13 @@ def states_mean_request():
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
+    job_id = webserver.job_counter
+    webserver.job_counter += 1
 
-    return jsonify({"status": "NotImplemented"})
+    # Add task to the task runner
+    webserver.tasks_runner.add_task(data, job_id, 'states_mean')
+
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():

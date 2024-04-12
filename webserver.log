@@ -1,0 +1,2685 @@
+2024-04-12 19:23:36,118 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico    9.909091
+25           Mississippi   15.505714
+51         West Virginia   15.733333
+45             Tennessee   15.735484
+18              Kentucky   15.831579
+19             Louisiana   16.542857
+38              Oklahoma   16.568571
+0                Alabama   16.742424
+15               Indiana   17.307143
+17                Kansas   17.663636
+36          North Dakota   17.856667
+3               Arkansas   18.031034
+16                  Iowa   18.162963
+26              Missouri   18.510000
+37                  Ohio   18.909677
+46                 Texas   18.911538
+44          South Dakota   19.184615
+28              National   19.917857
+34              New York   19.935484
+35        North Carolina   19.938462
+43        South Carolina   19.939394
+40          Pennsylvania   20.046154
+20                 Maine   20.141176
+29              Nebraska   20.290476
+21              Maryland   20.307407
+7               Delaware   20.372727
+32            New Jersey   20.703333
+30                Nevada   20.793548
+49              Virginia   20.851613
+8   District of Columbia   20.907692
+23              Michigan   20.961765
+6            Connecticut   20.996000
+13                 Idaho   21.168750
+10               Georgia   21.181818
+24             Minnesota   21.228000
+31         New Hampshire   21.434483
+42          Rhode Island   21.559091
+22         Massachusetts   21.602941
+14              Illinois   21.680769
+48               Vermont   21.804167
+9                Florida   22.025000
+50            Washington   22.084615
+11                  Guam   22.104545
+52             Wisconsin   22.307407
+47                  Utah   22.380769
+39                Oregon   22.550000
+33            New Mexico   22.807143
+2                Arizona   23.145455
+53               Wyoming   23.276923
+12                Hawaii   23.410526
+4             California   23.638710
+27               Montana   23.712121
+1                 Alaska   24.719048
+5               Colorado   25.276923
+2024-04-12 19:23:36,119 - app.logger - INFO - Handling task states_mean, Percent of adults aged 18 years and older who have an overweight classification
+2024-04-12 19:23:36,119 - app.logger - INFO - Job 8 is done
+2024-04-12 19:23:36,120 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 19:23:36,123 - app.logger - INFO - Task 7 completed with result {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 19:23:36,177 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+18             18       2022  ...                      AGEYR         AGEYR3544
+22             22       2014  ...                        OVR           OVERALL
+24             24       2022  ...                        EDU         EDUHSGRAD
+27             27       2020  ...                       RACE           RACEOTH
+32             32       2012  ...                        EDU          EDUCOTEC
+...           ...        ...  ...                        ...               ...
+18631       18631       2012  ...                        INC           INC5075
+18637       18637       2018  ...                       RACE           RACEOTH
+18641       18641       2016  ...                       RACE           RACEBLK
+18643       18643       2020  ...                        EDU         EDUCOGRAD
+18644       18644       2019  ...                        INC           INC1525
+
+[3701 rows x 34 columns]
+2024-04-12 19:23:36,182 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   34.155172
+1                 Alaska   35.902778
+2                Arizona   35.404688
+3               Arkansas   32.995161
+4             California   35.724590
+5               Colorado   34.785366
+6            Connecticut   35.754286
+7               Delaware   34.673846
+8   District of Columbia   30.746875
+9                Florida   34.273333
+10               Georgia   34.301266
+11                  Guam   34.485455
+12                Hawaii   34.004688
+13                 Idaho   35.190909
+14              Illinois   33.521875
+15               Indiana   33.587013
+16                  Iowa   33.964557
+17                Kansas   34.056250
+18              Kentucky   33.071642
+19             Louisiana   33.179310
+20                 Maine   34.316129
+21              Maryland   34.528395
+22         Massachusetts   34.620312
+23              Michigan   33.737349
+24             Minnesota   35.545763
+25           Mississippi   34.315625
+26              Missouri   32.762687
+27               Montana   36.178261
+28              National   35.085938
+29              Nebraska   35.691429
+30                Nevada   36.358333
+31         New Hampshire   34.844156
+32            New Jersey   36.080597
+33            New Mexico   35.863492
+34              New York   34.860000
+35        North Carolina   34.377632
+36          North Dakota   34.891667
+37                  Ohio   33.257534
+38              Oklahoma   34.058333
+39                Oregon   34.142187
+40          Pennsylvania   34.543548
+41           Puerto Rico   36.986364
+42          Rhode Island   35.178788
+43        South Carolina   33.259091
+44          South Dakota   35.195652
+45             Tennessee   34.109459
+46                 Texas   34.376923
+47                  Utah   34.195082
+48               Vermont   33.118182
+49        Virgin Islands   33.296875
+50              Virginia   34.458824
+51            Washington   33.968421
+52         West Virginia   33.861111
+53             Wisconsin   34.155422
+54               Wyoming   35.516901
+2024-04-12 19:23:36,182 - app.logger - INFO - Executing task 9
+2024-04-12 19:23:36,186 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+8   District of Columbia   30.746875
+26              Missouri   32.762687
+3               Arkansas   32.995161
+18              Kentucky   33.071642
+48               Vermont   33.118182
+19             Louisiana   33.179310
+37                  Ohio   33.257534
+43        South Carolina   33.259091
+49        Virgin Islands   33.296875
+14              Illinois   33.521875
+15               Indiana   33.587013
+23              Michigan   33.737349
+52         West Virginia   33.861111
+16                  Iowa   33.964557
+51            Washington   33.968421
+12                Hawaii   34.004688
+17                Kansas   34.056250
+38              Oklahoma   34.058333
+45             Tennessee   34.109459
+39                Oregon   34.142187
+0                Alabama   34.155172
+53             Wisconsin   34.155422
+47                  Utah   34.195082
+9                Florida   34.273333
+10               Georgia   34.301266
+25           Mississippi   34.315625
+20                 Maine   34.316129
+46                 Texas   34.376923
+35        North Carolina   34.377632
+50              Virginia   34.458824
+11                  Guam   34.485455
+21              Maryland   34.528395
+40          Pennsylvania   34.543548
+22         Massachusetts   34.620312
+7               Delaware   34.673846
+5               Colorado   34.785366
+31         New Hampshire   34.844156
+34              New York   34.860000
+36          North Dakota   34.891667
+28              National   35.085938
+42          Rhode Island   35.178788
+13                 Idaho   35.190909
+44          South Dakota   35.195652
+2                Arizona   35.404688
+54               Wyoming   35.516901
+24             Minnesota   35.545763
+29              Nebraska   35.691429
+4             California   35.724590
+6            Connecticut   35.754286
+33            New Mexico   35.863492
+1                 Alaska   35.902778
+32            New Jersey   36.080597
+27               Montana   36.178261
+30                Nevada   36.358333
+41           Puerto Rico   36.986364
+2024-04-12 19:23:36,188 - app.logger - INFO - Mean for states_mean is {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 19:23:36,187 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+2024-04-12 19:23:36,189 - app.logger - INFO - Task 8 completed with result {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 19:23:36,187 - app.logger - INFO - Job 9 is done
+2024-04-12 19:23:36,225 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+26             26       2019  ...                       RACE           RACEASN
+41             41       2017  ...                        INC           INC2535
+47             47       2013  ...                       RACE           RACEBLK
+55             55       2011  ...                        EDU         EDUHSGRAD
+63             63       2011  ...                      AGEYR         AGEYR5564
+...           ...        ...  ...                        ...               ...
+18620       18620       2011  ...                        EDU         EDUHSGRAD
+18625       18625       2017  ...                        OVR           OVERALL
+18628       18628       2015  ...                       RACE           RACEOTH
+18633       18633       2017  ...                        INC           INC2535
+18645       18645       2017  ...                        GEN            FEMALE
+
+[1525 rows x 34 columns]
+2024-04-12 19:23:36,243 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   43.403571
+1                 Alaska   55.296970
+2                Arizona   51.605556
+3               Arkansas   45.542424
+4             California   55.820588
+5               Colorado   56.774286
+6            Connecticut   49.978571
+7               Delaware   49.748148
+8   District of Columbia   50.876923
+9                Florida   51.437931
+10               Georgia   46.100000
+11                  Guam   44.986667
+12                Hawaii   56.760000
+13                 Idaho   57.753333
+14              Illinois   49.744000
+15               Indiana   44.376923
+16                  Iowa   47.721739
+17                Kansas   47.119355
+18              Kentucky   46.576000
+19             Louisiana   44.630303
+20                 Maine   52.446667
+21              Maryland   47.823077
+22         Massachusetts   50.996970
+23              Michigan   50.534375
+24             Minnesota   51.147222
+25           Mississippi   42.523333
+26              Missouri   48.923810
+27               Montana   55.009091
+28              National   48.532143
+29              Nebraska   49.200000
+30                Nevada   50.811538
+31         New Hampshire   52.581481
+32            New Jersey   48.895000
+33            New Mexico   55.781481
+34              New York   47.045833
+35        North Carolina   47.940625
+36          North Dakota   45.515385
+37                  Ohio   48.273913
+38              Oklahoma   43.755172
+39                Oregon   57.200000
+40          Pennsylvania   48.162222
+41           Puerto Rico   37.320000
+42          Rhode Island   46.251613
+43        South Carolina   47.976471
+44          South Dakota   48.526923
+45             Tennessee   42.825926
+46                 Texas   46.262963
+47                  Utah   52.639394
+48               Vermont   57.480645
+49        Virgin Islands   49.800000
+50              Virginia   48.936667
+51            Washington   55.012903
+52         West Virginia   48.696000
+53             Wisconsin   55.104545
+54               Wyoming   49.500000
+2024-04-12 19:23:36,282 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   37.320000
+25           Mississippi   42.523333
+45             Tennessee   42.825926
+0                Alabama   43.403571
+38              Oklahoma   43.755172
+15               Indiana   44.376923
+19             Louisiana   44.630303
+11                  Guam   44.986667
+36          North Dakota   45.515385
+3               Arkansas   45.542424
+10               Georgia   46.100000
+42          Rhode Island   46.251613
+46                 Texas   46.262963
+18              Kentucky   46.576000
+34              New York   47.045833
+17                Kansas   47.119355
+16                  Iowa   47.721739
+21              Maryland   47.823077
+35        North Carolina   47.940625
+43        South Carolina   47.976471
+40          Pennsylvania   48.162222
+37                  Ohio   48.273913
+44          South Dakota   48.526923
+28              National   48.532143
+52         West Virginia   48.696000
+32            New Jersey   48.895000
+26              Missouri   48.923810
+50              Virginia   48.936667
+29              Nebraska   49.200000
+54               Wyoming   49.500000
+14              Illinois   49.744000
+7               Delaware   49.748148
+49        Virgin Islands   49.800000
+6            Connecticut   49.978571
+23              Michigan   50.534375
+30                Nevada   50.811538
+8   District of Columbia   50.876923
+22         Massachusetts   50.996970
+24             Minnesota   51.147222
+9                Florida   51.437931
+2                Arizona   51.605556
+20                 Maine   52.446667
+31         New Hampshire   52.581481
+47                  Utah   52.639394
+27               Montana   55.009091
+51            Washington   55.012903
+53             Wisconsin   55.104545
+1                 Alaska   55.296970
+33            New Mexico   55.781481
+4             California   55.820588
+12                Hawaii   56.760000
+5               Colorado   56.774286
+39                Oregon   57.200000
+48               Vermont   57.480645
+13                 Idaho   57.753333
+2024-04-12 19:23:36,286 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 19:23:36,287 - app.logger - INFO - Task 9 completed with result {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 20:14:20,879 - app.logger - INFO - Thread started
+2024-04-12 20:14:20,903 - app.logger - INFO - Thread started
+2024-04-12 20:14:54,168 - app.logger - INFO - Executing task 1
+2024-04-12 20:14:54,174 - app.logger - INFO - Handling task states_mean, Percent of adults who report consuming fruit less than one time daily
+2024-04-12 20:14:54,182 - app.logger - INFO - Job 1 is done
+2024-04-12 20:14:54,208 - app.logger - INFO - Executing task 2
+2024-04-12 20:14:54,230 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+30             30       2021  ...                        INC             INCNR
+43             43       2019  ...                        OVR           OVERALL
+164           164       2019  ...                       RACE           RACEHPI
+180           180       2019  ...                       RACE           RACENAA
+215           215       2019  ...                       RACE           RACEHIS
+...           ...        ...  ...                        ...               ...
+18525       18525       2019  ...                        GEN            FEMALE
+18562       18562       2021  ...                        INC           INC3550
+18569       18569       2019  ...                        GEN              MALE
+18582       18582       2021  ...                        INC         INC75PLUS
+18638       18638       2017  ...                        INC           INC1525
+
+[864 rows x 34 columns]
+2024-04-12 20:14:54,230 - app.logger - INFO - Handling task states_mean, Percent of adults who engage in no leisure-time physical activity
+2024-04-12 20:14:54,232 - app.logger - INFO - Job 2 is done
+2024-04-12 20:14:54,239 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   44.075000
+1                 Alaska   40.200000
+2                Arizona   39.294737
+3               Arkansas   43.731579
+4             California   37.176471
+5               Colorado   37.511111
+6            Connecticut   35.276923
+7               Delaware   38.143750
+8   District of Columbia   35.361905
+9                Florida   36.750000
+10               Georgia   40.080000
+11                  Guam   43.356250
+12                Hawaii   39.005882
+13                 Idaho   39.954545
+14              Illinois   37.412500
+15               Indiana   42.688889
+16                  Iowa   38.886364
+17                Kansas   40.135714
+18              Kentucky   43.000000
+19             Louisiana   46.168750
+20                 Maine   35.435000
+21              Maryland   35.433333
+22         Massachusetts   34.420000
+23              Michigan   39.441176
+24             Minnesota   37.133333
+25           Mississippi   45.316667
+26              Missouri   42.094444
+27               Montana   39.940000
+28              National   38.766667
+29              Nebraska   41.033333
+30                Nevada   43.435714
+31         New Hampshire   35.438095
+32            New Jersey   36.206667
+33            New Mexico   41.055556
+34              New York   36.735714
+35        North Carolina   40.580000
+36          North Dakota   38.525000
+37                  Ohio   41.087500
+38              Oklahoma   45.454545
+39                Oregon   38.768421
+40          Pennsylvania   38.606667
+41           Puerto Rico   49.416667
+42          Rhode Island   35.416667
+43        South Carolina   42.700000
+44          South Dakota   40.384615
+45             Tennessee   41.950000
+46                 Texas   40.123077
+47                  Utah   36.050000
+48               Vermont   34.394118
+49        Virgin Islands   40.700000
+50              Virginia   39.475000
+51            Washington   39.833333
+52         West Virginia   45.170000
+53             Wisconsin   38.007692
+54               Wyoming   41.935294
+2024-04-12 20:14:54,265 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+48               Vermont   34.394118
+22         Massachusetts   34.420000
+6            Connecticut   35.276923
+8   District of Columbia   35.361905
+42          Rhode Island   35.416667
+21              Maryland   35.433333
+20                 Maine   35.435000
+31         New Hampshire   35.438095
+47                  Utah   36.050000
+32            New Jersey   36.206667
+34              New York   36.735714
+9                Florida   36.750000
+24             Minnesota   37.133333
+4             California   37.176471
+14              Illinois   37.412500
+5               Colorado   37.511111
+53             Wisconsin   38.007692
+7               Delaware   38.143750
+36          North Dakota   38.525000
+40          Pennsylvania   38.606667
+28              National   38.766667
+39                Oregon   38.768421
+16                  Iowa   38.886364
+12                Hawaii   39.005882
+2                Arizona   39.294737
+23              Michigan   39.441176
+50              Virginia   39.475000
+51            Washington   39.833333
+27               Montana   39.940000
+13                 Idaho   39.954545
+10               Georgia   40.080000
+46                 Texas   40.123077
+17                Kansas   40.135714
+1                 Alaska   40.200000
+44          South Dakota   40.384615
+35        North Carolina   40.580000
+49        Virgin Islands   40.700000
+29              Nebraska   41.033333
+33            New Mexico   41.055556
+37                  Ohio   41.087500
+54               Wyoming   41.935294
+45             Tennessee   41.950000
+26              Missouri   42.094444
+15               Indiana   42.688889
+43        South Carolina   42.700000
+18              Kentucky   43.000000
+11                  Guam   43.356250
+30                Nevada   43.435714
+3               Arkansas   43.731579
+0                Alabama   44.075000
+52         West Virginia   45.170000
+25           Mississippi   45.316667
+38              Oklahoma   45.454545
+19             Louisiana   46.168750
+41           Puerto Rico   49.416667
+2024-04-12 20:14:54,276 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+5               5       2011  ...                      AGEYR         AGEYR4554
+6               6       2017  ...                      AGEYR         AGEYR5564
+8               8       2013  ...                       RACE         RACE2PLUS
+10             10       2017  ...                        INC           INC1525
+11             11       2016  ...                        INC           INC1525
+...           ...        ...  ...                        ...               ...
+18568       18568       2015  ...                      AGEYR         AGEYR5564
+18570       18570       2017  ...                       RACE           RACEBLK
+18619       18619       2016  ...                       RACE           RACENAA
+18626       18626       2022  ...                        INC         INC75PLUS
+18648       18648       2017  ...                        GEN            FEMALE
+
+[3625 rows x 34 columns]
+2024-04-12 20:14:54,277 - app.logger - INFO - Mean for states_mean is {'Vermont': 34.39411764705883, 'Massachusetts': 34.42, 'Connecticut': 35.276923076923076, 'District of Columbia': 35.36190476190476, 'Rhode Island': 35.416666666666664, 'Maryland': 35.43333333333333, 'Maine': 35.435, 'New Hampshire': 35.438095238095244, 'Utah': 36.05, 'New Jersey': 36.20666666666667, 'New York': 36.73571428571428, 'Florida': 36.75, 'Minnesota': 37.13333333333333, 'California': 37.1764705882353, 'Illinois': 37.4125, 'Colorado': 37.51111111111111, 'Wisconsin': 38.00769230769231, 'Delaware': 38.14375, 'North Dakota': 38.525, 'Pennsylvania': 38.60666666666667, 'National': 38.766666666666666, 'Oregon': 38.76842105263158, 'Iowa': 38.88636363636363, 'Hawaii': 39.00588235294118, 'Arizona': 39.294736842105266, 'Michigan': 39.44117647058823, 'Virginia': 39.475, 'Washington': 39.833333333333336, 'Montana': 39.94, 'Idaho': 39.95454545454545, 'Georgia': 40.080000000000005, 'Texas': 40.12307692307692, 'Kansas': 40.135714285714286, 'Alaska': 40.199999999999996, 'South Dakota': 40.38461538461539, 'North Carolina': 40.580000000000005, 'Virgin Islands': 40.7, 'Nebraska': 41.03333333333334, 'New Mexico': 41.05555555555556, 'Ohio': 41.0875, 'Wyoming': 41.93529411764706, 'Tennessee': 41.95, 'Missouri': 42.09444444444445, 'Indiana': 42.68888888888889, 'South Carolina': 42.699999999999996, 'Kentucky': 43.0, 'Guam': 43.35625, 'Nevada': 43.43571428571429, 'Arkansas': 43.73157894736842, 'Alabama': 44.075, 'West Virginia': 45.17, 'Mississippi': 45.31666666666666, 'Oklahoma': 45.45454545454545, 'Louisiana': 46.16875, 'Puerto Rico': 49.416666666666664}
+2024-04-12 20:14:54,278 - app.logger - INFO - Task 1 completed with result {'Vermont': 34.39411764705883, 'Massachusetts': 34.42, 'Connecticut': 35.276923076923076, 'District of Columbia': 35.36190476190476, 'Rhode Island': 35.416666666666664, 'Maryland': 35.43333333333333, 'Maine': 35.435, 'New Hampshire': 35.438095238095244, 'Utah': 36.05, 'New Jersey': 36.20666666666667, 'New York': 36.73571428571428, 'Florida': 36.75, 'Minnesota': 37.13333333333333, 'California': 37.1764705882353, 'Illinois': 37.4125, 'Colorado': 37.51111111111111, 'Wisconsin': 38.00769230769231, 'Delaware': 38.14375, 'North Dakota': 38.525, 'Pennsylvania': 38.60666666666667, 'National': 38.766666666666666, 'Oregon': 38.76842105263158, 'Iowa': 38.88636363636363, 'Hawaii': 39.00588235294118, 'Arizona': 39.294736842105266, 'Michigan': 39.44117647058823, 'Virginia': 39.475, 'Washington': 39.833333333333336, 'Montana': 39.94, 'Idaho': 39.95454545454545, 'Georgia': 40.080000000000005, 'Texas': 40.12307692307692, 'Kansas': 40.135714285714286, 'Alaska': 40.199999999999996, 'South Dakota': 40.38461538461539, 'North Carolina': 40.580000000000005, 'Virgin Islands': 40.7, 'Nebraska': 41.03333333333334, 'New Mexico': 41.05555555555556, 'Ohio': 41.0875, 'Wyoming': 41.93529411764706, 'Tennessee': 41.95, 'Missouri': 42.09444444444445, 'Indiana': 42.68888888888889, 'South Carolina': 42.699999999999996, 'Kentucky': 43.0, 'Guam': 43.35625, 'Nevada': 43.43571428571429, 'Arkansas': 43.73157894736842, 'Alabama': 44.075, 'West Virginia': 45.17, 'Mississippi': 45.31666666666666, 'Oklahoma': 45.45454545454545, 'Louisiana': 46.16875, 'Puerto Rico': 49.416666666666664}
+2024-04-12 20:14:54,297 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   29.892500
+1                 Alaska   21.801562
+2                Arizona   25.140909
+3               Arkansas   30.601695
+4             California   21.071014
+5               Colorado   19.366667
+6            Connecticut   24.643243
+7               Delaware   28.183077
+8   District of Columbia   21.598214
+9                Florida   25.997260
+10               Georgia   27.155000
+11                  Guam   28.134884
+12                Hawaii   21.836923
+13                 Idaho   22.980952
+14              Illinois   24.532857
+15               Indiana   28.235714
+16                  Iowa   26.221053
+17                Kansas   25.945000
+18              Kentucky   31.028169
+19             Louisiana   29.544595
+20                 Maine   23.935714
+21              Maryland   25.071642
+22         Massachusetts   24.813514
+23              Michigan   25.141772
+24             Minnesota   22.737879
+25           Mississippi   30.129577
+26              Missouri   29.029851
+27               Montana   22.332877
+28              National   26.266250
+29              Nebraska   24.844304
+30                Nevada   25.481034
+31         New Hampshire   22.409333
+32            New Jersey   29.381429
+33            New Mexico   24.122727
+34              New York   26.800000
+35        North Carolina   25.249206
+36          North Dakota   27.801613
+37                  Ohio   28.786111
+38              Oklahoma   28.720833
+39                Oregon   20.956164
+40          Pennsylvania   25.143284
+41           Puerto Rico   40.627500
+42          Rhode Island   26.243103
+43        South Carolina   27.190789
+44          South Dakota   23.455844
+45             Tennessee   28.412281
+46                 Texas   27.891803
+47                  Utah   21.285937
+48               Vermont   21.813235
+49        Virgin Islands   26.255000
+50              Virginia   24.392063
+51            Washington   21.251389
+52         West Virginia   28.400000
+53             Wisconsin   22.913514
+54               Wyoming   25.096721
+2024-04-12 20:14:54,302 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+5               Colorado   19.366667
+39                Oregon   20.956164
+4             California   21.071014
+51            Washington   21.251389
+47                  Utah   21.285937
+8   District of Columbia   21.598214
+1                 Alaska   21.801562
+48               Vermont   21.813235
+12                Hawaii   21.836923
+27               Montana   22.332877
+31         New Hampshire   22.409333
+24             Minnesota   22.737879
+53             Wisconsin   22.913514
+13                 Idaho   22.980952
+44          South Dakota   23.455844
+20                 Maine   23.935714
+33            New Mexico   24.122727
+50              Virginia   24.392063
+14              Illinois   24.532857
+6            Connecticut   24.643243
+22         Massachusetts   24.813514
+29              Nebraska   24.844304
+21              Maryland   25.071642
+54               Wyoming   25.096721
+2                Arizona   25.140909
+23              Michigan   25.141772
+40          Pennsylvania   25.143284
+35        North Carolina   25.249206
+30                Nevada   25.481034
+17                Kansas   25.945000
+9                Florida   25.997260
+16                  Iowa   26.221053
+42          Rhode Island   26.243103
+49        Virgin Islands   26.255000
+28              National   26.266250
+34              New York   26.800000
+10               Georgia   27.155000
+43        South Carolina   27.190789
+36          North Dakota   27.801613
+46                 Texas   27.891803
+11                  Guam   28.134884
+7               Delaware   28.183077
+15               Indiana   28.235714
+52         West Virginia   28.400000
+45             Tennessee   28.412281
+38              Oklahoma   28.720833
+37                  Ohio   28.786111
+26              Missouri   29.029851
+32            New Jersey   29.381429
+19             Louisiana   29.544595
+0                Alabama   29.892500
+25           Mississippi   30.129577
+3               Arkansas   30.601695
+18              Kentucky   31.028169
+41           Puerto Rico   40.627500
+2024-04-12 20:14:54,303 - app.logger - INFO - Mean for states_mean is {'Colorado': 19.366666666666667, 'Oregon': 20.956164383561642, 'California': 21.071014492753626, 'Washington': 21.251388888888886, 'Utah': 21.2859375, 'District of Columbia': 21.598214285714285, 'Alaska': 21.8015625, 'Vermont': 21.813235294117646, 'Hawaii': 21.836923076923078, 'Montana': 22.332876712328765, 'New Hampshire': 22.409333333333333, 'Minnesota': 22.73787878787879, 'Wisconsin': 22.91351351351351, 'Idaho': 22.98095238095238, 'South Dakota': 23.455844155844154, 'Maine': 23.935714285714287, 'New Mexico': 24.12272727272727, 'Virginia': 24.392063492063492, 'Illinois': 24.532857142857143, 'Connecticut': 24.643243243243244, 'Massachusetts': 24.813513513513513, 'Nebraska': 24.844303797468356, 'Maryland': 25.071641791044776, 'Wyoming': 25.096721311475413, 'Arizona': 25.14090909090909, 'Michigan': 25.141772151898735, 'Pennsylvania': 25.143283582089555, 'North Carolina': 25.24920634920635, 'Nevada': 25.481034482758623, 'Kansas': 25.945, 'Florida': 25.997260273972604, 'Iowa': 26.221052631578946, 'Rhode Island': 26.24310344827586, 'Virgin Islands': 26.255000000000003, 'National': 26.266250000000003, 'New York': 26.799999999999997, 'Georgia': 27.154999999999998, 'South Carolina': 27.19078947368421, 'North Dakota': 27.801612903225806, 'Texas': 27.891803278688528, 'Guam': 28.134883720930233, 'Delaware': 28.183076923076925, 'Indiana': 28.235714285714288, 'West Virginia': 28.400000000000002, 'Tennessee': 28.412280701754387, 'Oklahoma': 28.720833333333335, 'Ohio': 28.78611111111111, 'Missouri': 29.029850746268657, 'New Jersey': 29.381428571428568, 'Louisiana': 29.544594594594596, 'Alabama': 29.892500000000002, 'Mississippi': 30.12957746478873, 'Arkansas': 30.60169491525424, 'Kentucky': 31.028169014084508, 'Puerto Rico': 40.6275}
+2024-04-12 20:14:54,303 - app.logger - INFO - Task 2 completed with result {'Colorado': 19.366666666666667, 'Oregon': 20.956164383561642, 'California': 21.071014492753626, 'Washington': 21.251388888888886, 'Utah': 21.2859375, 'District of Columbia': 21.598214285714285, 'Alaska': 21.8015625, 'Vermont': 21.813235294117646, 'Hawaii': 21.836923076923078, 'Montana': 22.332876712328765, 'New Hampshire': 22.409333333333333, 'Minnesota': 22.73787878787879, 'Wisconsin': 22.91351351351351, 'Idaho': 22.98095238095238, 'South Dakota': 23.455844155844154, 'Maine': 23.935714285714287, 'New Mexico': 24.12272727272727, 'Virginia': 24.392063492063492, 'Illinois': 24.532857142857143, 'Connecticut': 24.643243243243244, 'Massachusetts': 24.813513513513513, 'Nebraska': 24.844303797468356, 'Maryland': 25.071641791044776, 'Wyoming': 25.096721311475413, 'Arizona': 25.14090909090909, 'Michigan': 25.141772151898735, 'Pennsylvania': 25.143283582089555, 'North Carolina': 25.24920634920635, 'Nevada': 25.481034482758623, 'Kansas': 25.945, 'Florida': 25.997260273972604, 'Iowa': 26.221052631578946, 'Rhode Island': 26.24310344827586, 'Virgin Islands': 26.255000000000003, 'National': 26.266250000000003, 'New York': 26.799999999999997, 'Georgia': 27.154999999999998, 'South Carolina': 27.19078947368421, 'North Dakota': 27.801612903225806, 'Texas': 27.891803278688528, 'Guam': 28.134883720930233, 'Delaware': 28.183076923076925, 'Indiana': 28.235714285714288, 'West Virginia': 28.400000000000002, 'Tennessee': 28.412280701754387, 'Oklahoma': 28.720833333333335, 'Ohio': 28.78611111111111, 'Missouri': 29.029850746268657, 'New Jersey': 29.381428571428568, 'Louisiana': 29.544594594594596, 'Alabama': 29.892500000000002, 'Mississippi': 30.12957746478873, 'Arkansas': 30.60169491525424, 'Kentucky': 31.028169014084508, 'Puerto Rico': 40.6275}
+2024-04-12 20:14:54,305 - app.logger - INFO - Executing task 3
+2024-04-12 20:14:54,315 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+2024-04-12 20:14:54,325 - app.logger - INFO - Job 3 is done
+2024-04-12 20:14:54,354 - app.logger - INFO - Executing task 4
+2024-04-12 20:14:54,355 - app.logger - INFO - Handling task states_mean, Percent of adults aged 18 years and older who have obesity
+2024-04-12 20:14:54,371 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+12             12       2019  ...                       RACE           RACENAA
+15             15       2019  ...                      AGEYR       AGEYR65PLUS
+65             65       2015  ...                      AGEYR         AGEYR5564
+67             67       2015  ...                       RACE           RACEOTH
+72             72       2019  ...                        INC           INC3550
+...           ...        ...  ...                        ...               ...
+18607       18607       2011  ...                      AGEYR       AGEYR65PLUS
+18608       18608       2019  ...                       RACE           RACEBLK
+18636       18636       2011  ...                       RACE           RACEHPI
+18642       18642       2011  ...                       RACE           RACENAA
+18646       18646       2015  ...                       RACE           RACEOTH
+
+[1487 rows x 34 columns]
+2024-04-12 20:14:54,382 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   26.413636
+1                 Alaska   37.250000
+2                Arizona   32.025000
+3               Arkansas   29.285714
+4             California   37.295238
+5               Colorado   37.442308
+6            Connecticut   29.221875
+7               Delaware   30.551724
+8   District of Columbia   31.443333
+9                Florida   33.536364
+10               Georgia   30.733333
+11                  Guam   29.431250
+12                Hawaii   36.765000
+13                 Idaho   34.120588
+14              Illinois   30.313889
+15               Indiana   27.800000
+16                  Iowa   27.413043
+17                Kansas   29.343478
+18              Kentucky   28.174074
+19             Louisiana   28.479310
+20                 Maine   35.316000
+21              Maryland   31.219231
+22         Massachusetts   32.250000
+23              Michigan   32.270370
+24             Minnesota   32.366667
+25           Mississippi   23.832258
+26              Missouri   29.067742
+27               Montana   38.186667
+28              National   32.023333
+29              Nebraska   29.017391
+30                Nevada   31.636364
+31         New Hampshire   34.593333
+32            New Jersey   31.000000
+33            New Mexico   34.875000
+34              New York   29.847619
+35        North Carolina   28.046667
+36          North Dakota   27.796296
+37                  Ohio   30.900000
+38              Oklahoma   25.171429
+39                Oregon   37.193939
+40          Pennsylvania   30.423077
+41           Puerto Rico   17.875000
+42          Rhode Island   29.253659
+43        South Carolina   30.496429
+44          South Dakota   29.696552
+45             Tennessee   26.694118
+46                 Texas   25.108696
+47                  Utah   32.630000
+48               Vermont   37.634615
+49        Virgin Islands   31.100000
+50              Virginia   31.069231
+51            Washington   34.704545
+52         West Virginia   30.211538
+53             Wisconsin   35.371429
+54               Wyoming   33.713043
+2024-04-12 20:14:54,388 - app.logger - INFO - Job 4 is done
+2024-04-12 20:14:54,396 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+0               0       2017  ...                        INC         INC75PLUS
+3               3       2017  ...                        INC           INC2535
+13             13       2022  ...                        INC         INCLESS15
+17             17       2020  ...                        INC         INCLESS15
+20             20       2017  ...                        GEN              MALE
+...           ...        ...  ...                        ...               ...
+18629       18629       2013  ...                       RACE           RACEASN
+18630       18630       2022  ...                      AGEYR       AGEYR65PLUS
+18632       18632       2015  ...                        INC         INC75PLUS
+18635       18635       2022  ...                       RACE         RACE2PLUS
+18639       18639       2011  ...                      AGEYR         AGEYR5564
+
+[3569 rows x 34 columns]
+2024-04-12 20:14:54,400 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   17.875000
+25           Mississippi   23.832258
+46                 Texas   25.108696
+38              Oklahoma   25.171429
+0                Alabama   26.413636
+45             Tennessee   26.694118
+16                  Iowa   27.413043
+36          North Dakota   27.796296
+15               Indiana   27.800000
+35        North Carolina   28.046667
+18              Kentucky   28.174074
+19             Louisiana   28.479310
+29              Nebraska   29.017391
+26              Missouri   29.067742
+6            Connecticut   29.221875
+42          Rhode Island   29.253659
+3               Arkansas   29.285714
+17                Kansas   29.343478
+11                  Guam   29.431250
+44          South Dakota   29.696552
+34              New York   29.847619
+52         West Virginia   30.211538
+14              Illinois   30.313889
+40          Pennsylvania   30.423077
+43        South Carolina   30.496429
+7               Delaware   30.551724
+10               Georgia   30.733333
+37                  Ohio   30.900000
+32            New Jersey   31.000000
+50              Virginia   31.069231
+49        Virgin Islands   31.100000
+21              Maryland   31.219231
+8   District of Columbia   31.443333
+30                Nevada   31.636364
+28              National   32.023333
+2                Arizona   32.025000
+22         Massachusetts   32.250000
+23              Michigan   32.270370
+24             Minnesota   32.366667
+47                  Utah   32.630000
+9                Florida   33.536364
+54               Wyoming   33.713043
+13                 Idaho   34.120588
+31         New Hampshire   34.593333
+51            Washington   34.704545
+33            New Mexico   34.875000
+20                 Maine   35.316000
+53             Wisconsin   35.371429
+12                Hawaii   36.765000
+39                Oregon   37.193939
+1                 Alaska   37.250000
+4             California   37.295238
+5               Colorado   37.442308
+48               Vermont   37.634615
+27               Montana   38.186667
+2024-04-12 20:14:54,416 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 25.17142857142857, 'Alabama': 26.413636363636364, 'Tennessee': 26.694117647058825, 'Iowa': 27.41304347826087, 'North Dakota': 27.796296296296298, 'Indiana': 27.8, 'North Carolina': 28.046666666666667, 'Kentucky': 28.174074074074074, 'Louisiana': 28.479310344827585, 'Nebraska': 29.017391304347825, 'Missouri': 29.067741935483873, 'Connecticut': 29.221875, 'Rhode Island': 29.25365853658537, 'Arkansas': 29.285714285714285, 'Kansas': 29.343478260869563, 'Guam': 29.43125, 'South Dakota': 29.696551724137933, 'New York': 29.847619047619045, 'West Virginia': 30.21153846153846, 'Illinois': 30.313888888888886, 'Pennsylvania': 30.423076923076923, 'South Carolina': 30.49642857142857, 'Delaware': 30.551724137931036, 'Georgia': 30.73333333333333, 'Ohio': 30.9, 'New Jersey': 31.0, 'Virginia': 31.069230769230767, 'Virgin Islands': 31.1, 'Maryland': 31.21923076923077, 'District of Columbia': 31.44333333333333, 'Nevada': 31.636363636363637, 'National': 32.02333333333333, 'Arizona': 32.025, 'Massachusetts': 32.25, 'Michigan': 32.270370370370365, 'Minnesota': 32.36666666666667, 'Utah': 32.63, 'Florida': 33.53636363636364, 'Wyoming': 33.71304347826087, 'Idaho': 34.120588235294115, 'New Hampshire': 34.593333333333334, 'Washington': 34.70454545454545, 'New Mexico': 34.875, 'Maine': 35.316, 'Wisconsin': 35.37142857142857, 'Hawaii': 36.765, 'Oregon': 37.193939393939395, 'Alaska': 37.25, 'California': 37.2952380952381, 'Colorado': 37.44230769230769, 'Vermont': 37.63461538461539, 'Montana': 38.18666666666666}
+2024-04-12 20:14:54,416 - app.logger - INFO - Task 3 completed with result {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 25.17142857142857, 'Alabama': 26.413636363636364, 'Tennessee': 26.694117647058825, 'Iowa': 27.41304347826087, 'North Dakota': 27.796296296296298, 'Indiana': 27.8, 'North Carolina': 28.046666666666667, 'Kentucky': 28.174074074074074, 'Louisiana': 28.479310344827585, 'Nebraska': 29.017391304347825, 'Missouri': 29.067741935483873, 'Connecticut': 29.221875, 'Rhode Island': 29.25365853658537, 'Arkansas': 29.285714285714285, 'Kansas': 29.343478260869563, 'Guam': 29.43125, 'South Dakota': 29.696551724137933, 'New York': 29.847619047619045, 'West Virginia': 30.21153846153846, 'Illinois': 30.313888888888886, 'Pennsylvania': 30.423076923076923, 'South Carolina': 30.49642857142857, 'Delaware': 30.551724137931036, 'Georgia': 30.73333333333333, 'Ohio': 30.9, 'New Jersey': 31.0, 'Virginia': 31.069230769230767, 'Virgin Islands': 31.1, 'Maryland': 31.21923076923077, 'District of Columbia': 31.44333333333333, 'Nevada': 31.636363636363637, 'National': 32.02333333333333, 'Arizona': 32.025, 'Massachusetts': 32.25, 'Michigan': 32.270370370370365, 'Minnesota': 32.36666666666667, 'Utah': 32.63, 'Florida': 33.53636363636364, 'Wyoming': 33.71304347826087, 'Idaho': 34.120588235294115, 'New Hampshire': 34.593333333333334, 'Washington': 34.70454545454545, 'New Mexico': 34.875, 'Maine': 35.316, 'Wisconsin': 35.37142857142857, 'Hawaii': 36.765, 'Oregon': 37.193939393939395, 'Alaska': 37.25, 'California': 37.2952380952381, 'Colorado': 37.44230769230769, 'Vermont': 37.63461538461539, 'Montana': 38.18666666666666}
+2024-04-12 20:14:54,418 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   35.122667
+1                 Alaska   29.866154
+2                Arizona   30.683582
+3               Arkansas   35.425676
+4             California   26.814516
+5               Colorado   23.071429
+6            Connecticut   28.431250
+7               Delaware   31.129851
+8   District of Columbia   25.541429
+9                Florida   27.601099
+10               Georgia   31.468254
+11                  Guam   31.863636
+12                Hawaii   27.034722
+13                 Idaho   31.049231
+14              Illinois   30.129310
+15               Indiana   34.251852
+16                  Iowa   33.472727
+17                Kansas   33.815000
+18              Kentucky   34.306154
+19             Louisiana   36.266197
+20                 Maine   30.631034
+21              Maryland   30.373333
+22         Massachusetts   26.198684
+23              Michigan   34.374510
+24             Minnesota   29.832836
+25           Mississippi   36.506944
+26              Missouri   33.673134
+27               Montana   28.387143
+28              National   30.700000
+29              Nebraska   31.123077
+30                Nevada   28.890909
+31         New Hampshire   29.764865
+32            New Jersey   25.451786
+33            New Mexico   30.956757
+34              New York   27.598507
+35        North Carolina   32.203279
+36          North Dakota   33.261538
+37                  Ohio   33.700000
+38              Oklahoma   34.978333
+39                Oregon   29.452542
+40          Pennsylvania   30.706349
+41           Puerto Rico   31.341538
+42          Rhode Island   28.025000
+43        South Carolina   34.126866
+44          South Dakota   33.317333
+45             Tennessee   34.513636
+46                 Texas   31.429310
+47                  Utah   27.727397
+48               Vermont   28.545902
+49        Virgin Islands   32.751515
+50              Virginia   30.772973
+51            Washington   30.152113
+52         West Virginia   36.800000
+53             Wisconsin   33.342623
+54               Wyoming   29.255932
+2024-04-12 20:14:54,419 - app.logger - INFO - Executing task 5
+2024-04-12 20:14:54,424 - app.logger - INFO - Handling task states_mean, Percent of adults who engage in muscle-strengthening activities on 2 or more days a week
+2024-04-12 20:14:54,424 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+5               Colorado   23.071429
+32            New Jersey   25.451786
+8   District of Columbia   25.541429
+22         Massachusetts   26.198684
+4             California   26.814516
+12                Hawaii   27.034722
+34              New York   27.598507
+9                Florida   27.601099
+47                  Utah   27.727397
+42          Rhode Island   28.025000
+27               Montana   28.387143
+6            Connecticut   28.431250
+48               Vermont   28.545902
+30                Nevada   28.890909
+54               Wyoming   29.255932
+39                Oregon   29.452542
+31         New Hampshire   29.764865
+24             Minnesota   29.832836
+1                 Alaska   29.866154
+14              Illinois   30.129310
+51            Washington   30.152113
+21              Maryland   30.373333
+20                 Maine   30.631034
+2                Arizona   30.683582
+28              National   30.700000
+40          Pennsylvania   30.706349
+50              Virginia   30.772973
+33            New Mexico   30.956757
+13                 Idaho   31.049231
+29              Nebraska   31.123077
+7               Delaware   31.129851
+41           Puerto Rico   31.341538
+46                 Texas   31.429310
+10               Georgia   31.468254
+11                  Guam   31.863636
+35        North Carolina   32.203279
+49        Virgin Islands   32.751515
+36          North Dakota   33.261538
+44          South Dakota   33.317333
+53             Wisconsin   33.342623
+16                  Iowa   33.472727
+26              Missouri   33.673134
+37                  Ohio   33.700000
+17                Kansas   33.815000
+43        South Carolina   34.126866
+15               Indiana   34.251852
+18              Kentucky   34.306154
+23              Michigan   34.374510
+45             Tennessee   34.513636
+38              Oklahoma   34.978333
+0                Alabama   35.122667
+3               Arkansas   35.425676
+19             Louisiana   36.266197
+25           Mississippi   36.506944
+52         West Virginia   36.800000
+2024-04-12 20:14:54,419 - app.logger - INFO - Job 5 is done
+2024-04-12 20:14:54,426 - app.logger - INFO - Mean for states_mean is {'Colorado': 23.071428571428573, 'New Jersey': 25.451785714285712, 'District of Columbia': 25.541428571428572, 'Massachusetts': 26.198684210526313, 'California': 26.81451612903226, 'Hawaii': 27.03472222222222, 'New York': 27.598507462686566, 'Florida': 27.6010989010989, 'Utah': 27.72739726027397, 'Rhode Island': 28.025000000000002, 'Montana': 28.387142857142855, 'Connecticut': 28.43125, 'Vermont': 28.54590163934426, 'Nevada': 28.89090909090909, 'Wyoming': 29.25593220338983, 'Oregon': 29.452542372881357, 'New Hampshire': 29.764864864864865, 'Minnesota': 29.83283582089552, 'Alaska': 29.866153846153846, 'Illinois': 30.129310344827587, 'Washington': 30.15211267605634, 'Maryland': 30.373333333333335, 'Maine': 30.63103448275862, 'Arizona': 30.683582089552242, 'National': 30.700000000000003, 'Pennsylvania': 30.706349206349206, 'Virginia': 30.77297297297297, 'New Mexico': 30.95675675675676, 'Idaho': 31.04923076923077, 'Nebraska': 31.123076923076923, 'Delaware': 31.129850746268655, 'Puerto Rico': 31.341538461538462, 'Texas': 31.429310344827588, 'Georgia': 31.46825396825397, 'Guam': 31.863636363636363, 'North Carolina': 32.20327868852459, 'Virgin Islands': 32.75151515151515, 'North Dakota': 33.261538461538464, 'South Dakota': 33.31733333333334, 'Wisconsin': 33.342622950819674, 'Iowa': 33.47272727272727, 'Missouri': 33.67313432835821, 'Ohio': 33.7, 'Kansas': 33.815000000000005, 'South Carolina': 34.12686567164179, 'Indiana': 34.25185185185185, 'Kentucky': 34.30615384615385, 'Michigan': 34.37450980392157, 'Tennessee': 34.513636363636365, 'Oklahoma': 34.97833333333333, 'Alabama': 35.12266666666667, 'Arkansas': 35.42567567567568, 'Louisiana': 36.26619718309859, 'Mississippi': 36.50694444444444, 'West Virginia': 36.800000000000004}
+2024-04-12 20:14:54,444 - app.logger - INFO - Task 4 completed with result {'Colorado': 23.071428571428573, 'New Jersey': 25.451785714285712, 'District of Columbia': 25.541428571428572, 'Massachusetts': 26.198684210526313, 'California': 26.81451612903226, 'Hawaii': 27.03472222222222, 'New York': 27.598507462686566, 'Florida': 27.6010989010989, 'Utah': 27.72739726027397, 'Rhode Island': 28.025000000000002, 'Montana': 28.387142857142855, 'Connecticut': 28.43125, 'Vermont': 28.54590163934426, 'Nevada': 28.89090909090909, 'Wyoming': 29.25593220338983, 'Oregon': 29.452542372881357, 'New Hampshire': 29.764864864864865, 'Minnesota': 29.83283582089552, 'Alaska': 29.866153846153846, 'Illinois': 30.129310344827587, 'Washington': 30.15211267605634, 'Maryland': 30.373333333333335, 'Maine': 30.63103448275862, 'Arizona': 30.683582089552242, 'National': 30.700000000000003, 'Pennsylvania': 30.706349206349206, 'Virginia': 30.77297297297297, 'New Mexico': 30.95675675675676, 'Idaho': 31.04923076923077, 'Nebraska': 31.123076923076923, 'Delaware': 31.129850746268655, 'Puerto Rico': 31.341538461538462, 'Texas': 31.429310344827588, 'Georgia': 31.46825396825397, 'Guam': 31.863636363636363, 'North Carolina': 32.20327868852459, 'Virgin Islands': 32.75151515151515, 'North Dakota': 33.261538461538464, 'South Dakota': 33.31733333333334, 'Wisconsin': 33.342622950819674, 'Iowa': 33.47272727272727, 'Missouri': 33.67313432835821, 'Ohio': 33.7, 'Kansas': 33.815000000000005, 'South Carolina': 34.12686567164179, 'Indiana': 34.25185185185185, 'Kentucky': 34.30615384615385, 'Michigan': 34.37450980392157, 'Tennessee': 34.513636363636365, 'Oklahoma': 34.97833333333333, 'Alabama': 35.12266666666667, 'Arkansas': 35.42567567567568, 'Louisiana': 36.26619718309859, 'Mississippi': 36.50694444444444, 'West Virginia': 36.800000000000004}
+2024-04-12 20:14:54,461 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+1               1       2019  ...                        INC         INC75PLUS
+2               2       2013  ...                      AGEYR         AGEYR3544
+7               7       2019  ...                        GEN            FEMALE
+9               9       2011  ...                        INC         INCLESS15
+14             14       2019  ...                        EDU             EDUHS
+...           ...        ...  ...                        ...               ...
+18617       18617       2019  ...                       RACE           RACEBLK
+18623       18623       2017  ...                        EDU         EDUHSGRAD
+18634       18634       2015  ...                        EDU             EDUHS
+18640       18640       2017  ...                        INC           INC3550
+18647       18647       2019  ...                        EDU         EDUHSGRAD
+
+[1467 rows x 34 columns]
+2024-04-12 20:14:54,473 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   26.621429
+1                 Alaska   32.991892
+2                Arizona   34.325926
+3               Arkansas   26.326923
+4             California   34.770833
+5               Colorado   36.954167
+6            Connecticut   31.053333
+7               Delaware   32.269565
+8   District of Columbia   35.134615
+9                Florida   31.748649
+10               Georgia   32.270968
+11                  Guam   38.293333
+12                Hawaii   33.304348
+13                 Idaho   32.003448
+14              Illinois   32.875000
+15               Indiana   30.751515
+16                  Iowa   28.879412
+17                Kansas   28.940625
+18              Kentucky   28.981481
+19             Louisiana   27.406061
+20                 Maine   30.811111
+21              Maryland   31.121212
+22         Massachusetts   30.340741
+23              Michigan   32.468000
+24             Minnesota   33.476190
+25           Mississippi   27.478571
+26              Missouri   28.110000
+27               Montana   31.461290
+28              National   30.018519
+29              Nebraska   30.970370
+30                Nevada   32.292857
+31         New Hampshire   32.056000
+32            New Jersey   29.068750
+33            New Mexico   34.928000
+34              New York   32.852381
+35        North Carolina   30.945161
+36          North Dakota   30.012121
+37                  Ohio   31.875000
+38              Oklahoma   25.930769
+39                Oregon   31.245000
+40          Pennsylvania   31.265385
+41           Puerto Rico   14.778571
+42          Rhode Island   30.885185
+43        South Carolina   31.112000
+44          South Dakota   31.074286
+45             Tennessee   27.928000
+46                 Texas   29.808333
+47                  Utah   35.028571
+48               Vermont   30.683333
+49        Virgin Islands   30.900000
+50              Virginia   31.739130
+51            Washington   33.265517
+52         West Virginia   24.041379
+53             Wisconsin   31.638462
+54               Wyoming   31.319355
+2024-04-12 20:14:54,484 - app.logger - INFO - Executing task 6
+2024-04-12 20:14:54,487 - app.logger - INFO - Handling task states_mean, Percent of adults who report consuming vegetables less than one time daily
+2024-04-12 20:14:54,485 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   14.778571
+52         West Virginia   24.041379
+38              Oklahoma   25.930769
+3               Arkansas   26.326923
+0                Alabama   26.621429
+19             Louisiana   27.406061
+25           Mississippi   27.478571
+45             Tennessee   27.928000
+26              Missouri   28.110000
+16                  Iowa   28.879412
+17                Kansas   28.940625
+18              Kentucky   28.981481
+32            New Jersey   29.068750
+46                 Texas   29.808333
+36          North Dakota   30.012121
+28              National   30.018519
+22         Massachusetts   30.340741
+48               Vermont   30.683333
+15               Indiana   30.751515
+20                 Maine   30.811111
+42          Rhode Island   30.885185
+49        Virgin Islands   30.900000
+35        North Carolina   30.945161
+29              Nebraska   30.970370
+6            Connecticut   31.053333
+44          South Dakota   31.074286
+43        South Carolina   31.112000
+21              Maryland   31.121212
+39                Oregon   31.245000
+40          Pennsylvania   31.265385
+54               Wyoming   31.319355
+27               Montana   31.461290
+53             Wisconsin   31.638462
+50              Virginia   31.739130
+9                Florida   31.748649
+37                  Ohio   31.875000
+13                 Idaho   32.003448
+31         New Hampshire   32.056000
+7               Delaware   32.269565
+10               Georgia   32.270968
+30                Nevada   32.292857
+23              Michigan   32.468000
+34              New York   32.852381
+14              Illinois   32.875000
+1                 Alaska   32.991892
+51            Washington   33.265517
+12                Hawaii   33.304348
+24             Minnesota   33.476190
+2                Arizona   34.325926
+4             California   34.770833
+33            New Mexico   34.928000
+47                  Utah   35.028571
+8   District of Columbia   35.134615
+5               Colorado   36.954167
+11                  Guam   38.293333
+2024-04-12 20:14:54,512 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769233, 'Arkansas': 26.326923076923077, 'Alabama': 26.62142857142857, 'Louisiana': 27.406060606060606, 'Mississippi': 27.478571428571428, 'Tennessee': 27.928, 'Missouri': 28.11, 'Iowa': 28.879411764705882, 'Kansas': 28.940625, 'Kentucky': 28.98148148148148, 'New Jersey': 29.06875, 'Texas': 29.808333333333334, 'North Dakota': 30.01212121212121, 'National': 30.01851851851852, 'Massachusetts': 30.340740740740742, 'Vermont': 30.68333333333333, 'Indiana': 30.75151515151515, 'Maine': 30.811111111111114, 'Rhode Island': 30.885185185185183, 'Virgin Islands': 30.9, 'North Carolina': 30.94516129032258, 'Nebraska': 30.97037037037037, 'Connecticut': 31.053333333333335, 'South Dakota': 31.07428571428571, 'South Carolina': 31.112, 'Maryland': 31.12121212121212, 'Oregon': 31.244999999999997, 'Pennsylvania': 31.265384615384615, 'Wyoming': 31.31935483870968, 'Montana': 31.461290322580645, 'Wisconsin': 31.638461538461538, 'Virginia': 31.73913043478261, 'Florida': 31.74864864864865, 'Ohio': 31.875, 'Idaho': 32.00344827586207, 'New Hampshire': 32.056, 'Delaware': 32.2695652173913, 'Georgia': 32.270967741935486, 'Nevada': 32.29285714285714, 'Michigan': 32.468, 'New York': 32.852380952380955, 'Illinois': 32.875, 'Alaska': 32.991891891891896, 'Washington': 33.265517241379314, 'Hawaii': 33.30434782608695, 'Minnesota': 33.476190476190474, 'Arizona': 34.32592592592592, 'California': 34.770833333333336, 'New Mexico': 34.928000000000004, 'Utah': 35.02857142857143, 'District of Columbia': 35.13461538461539, 'Colorado': 36.954166666666666, 'Guam': 38.29333333333333}
+2024-04-12 20:14:54,513 - app.logger - INFO - Task 5 completed with result {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769233, 'Arkansas': 26.326923076923077, 'Alabama': 26.62142857142857, 'Louisiana': 27.406060606060606, 'Mississippi': 27.478571428571428, 'Tennessee': 27.928, 'Missouri': 28.11, 'Iowa': 28.879411764705882, 'Kansas': 28.940625, 'Kentucky': 28.98148148148148, 'New Jersey': 29.06875, 'Texas': 29.808333333333334, 'North Dakota': 30.01212121212121, 'National': 30.01851851851852, 'Massachusetts': 30.340740740740742, 'Vermont': 30.68333333333333, 'Indiana': 30.75151515151515, 'Maine': 30.811111111111114, 'Rhode Island': 30.885185185185183, 'Virgin Islands': 30.9, 'North Carolina': 30.94516129032258, 'Nebraska': 30.97037037037037, 'Connecticut': 31.053333333333335, 'South Dakota': 31.07428571428571, 'South Carolina': 31.112, 'Maryland': 31.12121212121212, 'Oregon': 31.244999999999997, 'Pennsylvania': 31.265384615384615, 'Wyoming': 31.31935483870968, 'Montana': 31.461290322580645, 'Wisconsin': 31.638461538461538, 'Virginia': 31.73913043478261, 'Florida': 31.74864864864865, 'Ohio': 31.875, 'Idaho': 32.00344827586207, 'New Hampshire': 32.056, 'Delaware': 32.2695652173913, 'Georgia': 32.270967741935486, 'Nevada': 32.29285714285714, 'Michigan': 32.468, 'New York': 32.852380952380955, 'Illinois': 32.875, 'Alaska': 32.991891891891896, 'Washington': 33.265517241379314, 'Hawaii': 33.30434782608695, 'Minnesota': 33.476190476190474, 'Arizona': 34.32592592592592, 'California': 34.770833333333336, 'New Mexico': 34.928000000000004, 'Utah': 35.02857142857143, 'District of Columbia': 35.13461538461539, 'Colorado': 36.954166666666666, 'Guam': 38.29333333333333}
+2024-04-12 20:14:54,513 - app.logger - INFO - Job 6 is done
+2024-04-12 20:14:54,518 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+4               4       2021  ...                       RACE           RACEHIS
+23             23       2019  ...                        EDU         EDUCOGRAD
+50             50       2019  ...                        EDU             EDUHS
+86             86       2021  ...                        INC           INC3550
+117           117       2019  ...                      AGEYR         AGEYR5564
+...           ...        ...  ...                        ...               ...
+18518       18518       2021  ...                        INC             INCNR
+18557       18557       2021  ...                       RACE           RACEASN
+18586       18586       2019  ...                        INC         INC75PLUS
+18622       18622       2019  ...                       RACE         RACE2PLUS
+18649       18649       2021  ...                       RACE           RACEBLK
+
+[932 rows x 34 columns]
+2024-04-12 20:14:54,547 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   21.950000
+1                 Alaska   21.206667
+2                Arizona   22.711111
+3               Arkansas   22.523077
+4             California   20.627778
+5               Colorado   20.707692
+6            Connecticut   22.823077
+7               Delaware   22.129412
+8   District of Columbia   18.430769
+9                Florida   18.600000
+10               Georgia   17.664706
+11                  Guam   26.757143
+12                Hawaii   21.950000
+13                 Idaho   19.726667
+14              Illinois   22.170000
+15               Indiana   23.919231
+16                  Iowa   22.950000
+17                Kansas   20.442857
+18              Kentucky   20.350000
+19             Louisiana   24.506250
+20                 Maine   14.858824
+21              Maryland   21.152941
+22         Massachusetts   17.653333
+23              Michigan   19.450000
+24             Minnesota   21.540000
+25           Mississippi   22.983333
+26              Missouri   20.425000
+27               Montana   18.417391
+28              National   20.400000
+29              Nebraska   21.330435
+30                Nevada   24.100000
+31         New Hampshire   16.938889
+32            New Jersey   21.054545
+33            New Mexico   24.535714
+34              New York   20.225000
+35        North Carolina   19.838889
+36          North Dakota   22.540909
+37                  Ohio   21.464706
+38              Oklahoma   21.545833
+39                Oregon   18.466667
+40          Pennsylvania   21.466667
+41           Puerto Rico   39.890000
+42          Rhode Island   22.393333
+43        South Carolina   19.900000
+44          South Dakota   17.988889
+45             Tennessee   20.425000
+46                 Texas   21.371429
+47                  Utah   21.876923
+48               Vermont   16.045455
+49        Virgin Islands   27.264286
+50              Virginia   21.046667
+51            Washington   20.236364
+52         West Virginia   20.053333
+53             Wisconsin   23.185714
+54               Wyoming   19.623077
+2024-04-12 20:14:54,557 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+20                 Maine   14.858824
+48               Vermont   16.045455
+31         New Hampshire   16.938889
+22         Massachusetts   17.653333
+10               Georgia   17.664706
+44          South Dakota   17.988889
+27               Montana   18.417391
+8   District of Columbia   18.430769
+39                Oregon   18.466667
+9                Florida   18.600000
+23              Michigan   19.450000
+54               Wyoming   19.623077
+13                 Idaho   19.726667
+35        North Carolina   19.838889
+43        South Carolina   19.900000
+52         West Virginia   20.053333
+34              New York   20.225000
+51            Washington   20.236364
+18              Kentucky   20.350000
+28              National   20.400000
+26              Missouri   20.425000
+45             Tennessee   20.425000
+17                Kansas   20.442857
+4             California   20.627778
+5               Colorado   20.707692
+50              Virginia   21.046667
+32            New Jersey   21.054545
+21              Maryland   21.152941
+1                 Alaska   21.206667
+29              Nebraska   21.330435
+46                 Texas   21.371429
+37                  Ohio   21.464706
+40          Pennsylvania   21.466667
+24             Minnesota   21.540000
+38              Oklahoma   21.545833
+47                  Utah   21.876923
+12                Hawaii   21.950000
+0                Alabama   21.950000
+7               Delaware   22.129412
+14              Illinois   22.170000
+42          Rhode Island   22.393333
+3               Arkansas   22.523077
+36          North Dakota   22.540909
+2                Arizona   22.711111
+6            Connecticut   22.823077
+16                  Iowa   22.950000
+25           Mississippi   22.983333
+53             Wisconsin   23.185714
+15               Indiana   23.919231
+30                Nevada   24.100000
+19             Louisiana   24.506250
+33            New Mexico   24.535714
+11                  Guam   26.757143
+49        Virgin Islands   27.264286
+41           Puerto Rico   39.890000
+2024-04-12 20:14:54,560 - app.logger - INFO - Mean for states_mean is {'Maine': 14.858823529411765, 'Vermont': 16.045454545454547, 'New Hampshire': 16.938888888888886, 'Massachusetts': 17.653333333333332, 'Georgia': 17.66470588235294, 'South Dakota': 17.98888888888889, 'Montana': 18.417391304347824, 'District of Columbia': 18.43076923076923, 'Oregon': 18.466666666666665, 'Florida': 18.599999999999998, 'Michigan': 19.45, 'Wyoming': 19.623076923076923, 'Idaho': 19.726666666666667, 'North Carolina': 19.83888888888889, 'South Carolina': 19.9, 'West Virginia': 20.053333333333335, 'New York': 20.224999999999998, 'Washington': 20.236363636363635, 'Kentucky': 20.349999999999998, 'National': 20.4, 'Missouri': 20.425, 'Tennessee': 20.425, 'Kansas': 20.442857142857143, 'California': 20.62777777777778, 'Colorado': 20.707692307692305, 'Virginia': 21.046666666666667, 'New Jersey': 21.054545454545455, 'Maryland': 21.15294117647059, 'Alaska': 21.206666666666663, 'Nebraska': 21.330434782608698, 'Texas': 21.37142857142857, 'Ohio': 21.46470588235294, 'Pennsylvania': 21.466666666666665, 'Minnesota': 21.54, 'Oklahoma': 21.545833333333334, 'Utah': 21.876923076923074, 'Hawaii': 21.95, 'Alabama': 21.95, 'Delaware': 22.129411764705882, 'Illinois': 22.169999999999998, 'Rhode Island': 22.39333333333333, 'Arkansas': 22.523076923076925, 'North Dakota': 22.54090909090909, 'Arizona': 22.711111111111112, 'Connecticut': 22.823076923076922, 'Iowa': 22.95, 'Mississippi': 22.983333333333334, 'Wisconsin': 23.185714285714283, 'Indiana': 23.91923076923077, 'Nevada': 24.1, 'Louisiana': 24.50625, 'New Mexico': 24.535714285714285, 'Guam': 26.757142857142856, 'Virgin Islands': 27.264285714285712, 'Puerto Rico': 39.89}
+2024-04-12 20:14:54,560 - app.logger - INFO - Task 6 completed with result {'Maine': 14.858823529411765, 'Vermont': 16.045454545454547, 'New Hampshire': 16.938888888888886, 'Massachusetts': 17.653333333333332, 'Georgia': 17.66470588235294, 'South Dakota': 17.98888888888889, 'Montana': 18.417391304347824, 'District of Columbia': 18.43076923076923, 'Oregon': 18.466666666666665, 'Florida': 18.599999999999998, 'Michigan': 19.45, 'Wyoming': 19.623076923076923, 'Idaho': 19.726666666666667, 'North Carolina': 19.83888888888889, 'South Carolina': 19.9, 'West Virginia': 20.053333333333335, 'New York': 20.224999999999998, 'Washington': 20.236363636363635, 'Kentucky': 20.349999999999998, 'National': 20.4, 'Missouri': 20.425, 'Tennessee': 20.425, 'Kansas': 20.442857142857143, 'California': 20.62777777777778, 'Colorado': 20.707692307692305, 'Virginia': 21.046666666666667, 'New Jersey': 21.054545454545455, 'Maryland': 21.15294117647059, 'Alaska': 21.206666666666663, 'Nebraska': 21.330434782608698, 'Texas': 21.37142857142857, 'Ohio': 21.46470588235294, 'Pennsylvania': 21.466666666666665, 'Minnesota': 21.54, 'Oklahoma': 21.545833333333334, 'Utah': 21.876923076923074, 'Hawaii': 21.95, 'Alabama': 21.95, 'Delaware': 22.129411764705882, 'Illinois': 22.169999999999998, 'Rhode Island': 22.39333333333333, 'Arkansas': 22.523076923076925, 'North Dakota': 22.54090909090909, 'Arizona': 22.711111111111112, 'Connecticut': 22.823076923076922, 'Iowa': 22.95, 'Mississippi': 22.983333333333334, 'Wisconsin': 23.185714285714283, 'Indiana': 23.91923076923077, 'Nevada': 24.1, 'Louisiana': 24.50625, 'New Mexico': 24.535714285714285, 'Guam': 26.757142857142856, 'Virgin Islands': 27.264285714285712, 'Puerto Rico': 39.89}
+2024-04-12 20:14:54,564 - app.logger - INFO - Executing task 7
+2024-04-12 20:14:54,564 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week
+2024-04-12 20:14:54,576 - app.logger - INFO - Job 7 is done
+2024-04-12 20:14:54,631 - app.logger - INFO - Executing task 8
+2024-04-12 20:14:54,632 - app.logger - INFO - Handling task states_mean, Percent of adults aged 18 years and older who have an overweight classification
+2024-04-12 20:14:54,642 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+56             56       2013  ...                       RACE           RACEHPI
+62             62       2019  ...                        GEN              MALE
+92             92       2011  ...                        INC           INC2535
+98             98       2013  ...                        EDU         EDUCOGRAD
+99             99       2019  ...                      AGEYR         AGEYR3544
+...           ...        ...  ...                        ...               ...
+18546       18546       2017  ...                        OVR           OVERALL
+18574       18574       2017  ...                      AGEYR         AGEYR5564
+18593       18593       2017  ...                      AGEYR         AGEYR4554
+18599       18599       2011  ...                        INC         INC75PLUS
+18604       18604       2011  ...                       RACE           RACENAA
+
+[1480 rows x 34 columns]
+2024-04-12 20:14:54,647 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   16.742424
+1                 Alaska   24.719048
+2                Arizona   23.145455
+3               Arkansas   18.031034
+4             California   23.638710
+5               Colorado   25.276923
+6            Connecticut   20.996000
+7               Delaware   20.372727
+8   District of Columbia   20.907692
+9                Florida   22.025000
+10               Georgia   21.181818
+11                  Guam   22.104545
+12                Hawaii   23.410526
+13                 Idaho   21.168750
+14              Illinois   21.680769
+15               Indiana   17.307143
+16                  Iowa   18.162963
+17                Kansas   17.663636
+18              Kentucky   15.831579
+19             Louisiana   16.542857
+20                 Maine   20.141176
+21              Maryland   20.307407
+22         Massachusetts   21.602941
+23              Michigan   20.961765
+24             Minnesota   21.228000
+25           Mississippi   15.505714
+26              Missouri   18.510000
+27               Montana   23.712121
+28              National   19.917857
+29              Nebraska   20.290476
+30                Nevada   20.793548
+31         New Hampshire   21.434483
+32            New Jersey   20.703333
+33            New Mexico   22.807143
+34              New York   19.935484
+35        North Carolina   19.938462
+36          North Dakota   17.856667
+37                  Ohio   18.909677
+38              Oklahoma   16.568571
+39                Oregon   22.550000
+40          Pennsylvania   20.046154
+41           Puerto Rico    9.909091
+42          Rhode Island   21.559091
+43        South Carolina   19.939394
+44          South Dakota   19.184615
+45             Tennessee   15.735484
+46                 Texas   18.911538
+47                  Utah   22.380769
+48               Vermont   21.804167
+49              Virginia   20.851613
+50            Washington   22.084615
+51         West Virginia   15.733333
+52             Wisconsin   22.307407
+53               Wyoming   23.276923
+2024-04-12 20:14:54,655 - app.logger - INFO - Job 8 is done
+2024-04-12 20:14:54,679 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+18             18       2022  ...                      AGEYR         AGEYR3544
+22             22       2014  ...                        OVR           OVERALL
+24             24       2022  ...                        EDU         EDUHSGRAD
+27             27       2020  ...                       RACE           RACEOTH
+32             32       2012  ...                        EDU          EDUCOTEC
+...           ...        ...  ...                        ...               ...
+18631       18631       2012  ...                        INC           INC5075
+18637       18637       2018  ...                       RACE           RACEOTH
+18641       18641       2016  ...                       RACE           RACEBLK
+18643       18643       2020  ...                        EDU         EDUCOGRAD
+18644       18644       2019  ...                        INC           INC1525
+
+[3701 rows x 34 columns]
+2024-04-12 20:14:54,682 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico    9.909091
+25           Mississippi   15.505714
+51         West Virginia   15.733333
+45             Tennessee   15.735484
+18              Kentucky   15.831579
+19             Louisiana   16.542857
+38              Oklahoma   16.568571
+0                Alabama   16.742424
+15               Indiana   17.307143
+17                Kansas   17.663636
+36          North Dakota   17.856667
+3               Arkansas   18.031034
+16                  Iowa   18.162963
+26              Missouri   18.510000
+37                  Ohio   18.909677
+46                 Texas   18.911538
+44          South Dakota   19.184615
+28              National   19.917857
+34              New York   19.935484
+35        North Carolina   19.938462
+43        South Carolina   19.939394
+40          Pennsylvania   20.046154
+20                 Maine   20.141176
+29              Nebraska   20.290476
+21              Maryland   20.307407
+7               Delaware   20.372727
+32            New Jersey   20.703333
+30                Nevada   20.793548
+49              Virginia   20.851613
+8   District of Columbia   20.907692
+23              Michigan   20.961765
+6            Connecticut   20.996000
+13                 Idaho   21.168750
+10               Georgia   21.181818
+24             Minnesota   21.228000
+31         New Hampshire   21.434483
+42          Rhode Island   21.559091
+22         Massachusetts   21.602941
+14              Illinois   21.680769
+48               Vermont   21.804167
+9                Florida   22.025000
+50            Washington   22.084615
+11                  Guam   22.104545
+52             Wisconsin   22.307407
+47                  Utah   22.380769
+39                Oregon   22.550000
+33            New Mexico   22.807143
+2                Arizona   23.145455
+53               Wyoming   23.276923
+12                Hawaii   23.410526
+4             California   23.638710
+27               Montana   23.712121
+1                 Alaska   24.719048
+5               Colorado   25.276923
+2024-04-12 20:14:54,683 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 20:14:54,683 - app.logger - INFO - Task 7 completed with result {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 20:14:54,700 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   34.155172
+1                 Alaska   35.902778
+2                Arizona   35.404688
+3               Arkansas   32.995161
+4             California   35.724590
+5               Colorado   34.785366
+6            Connecticut   35.754286
+7               Delaware   34.673846
+8   District of Columbia   30.746875
+9                Florida   34.273333
+10               Georgia   34.301266
+11                  Guam   34.485455
+12                Hawaii   34.004688
+13                 Idaho   35.190909
+14              Illinois   33.521875
+15               Indiana   33.587013
+16                  Iowa   33.964557
+17                Kansas   34.056250
+18              Kentucky   33.071642
+19             Louisiana   33.179310
+20                 Maine   34.316129
+21              Maryland   34.528395
+22         Massachusetts   34.620312
+23              Michigan   33.737349
+24             Minnesota   35.545763
+25           Mississippi   34.315625
+26              Missouri   32.762687
+27               Montana   36.178261
+28              National   35.085938
+29              Nebraska   35.691429
+30                Nevada   36.358333
+31         New Hampshire   34.844156
+32            New Jersey   36.080597
+33            New Mexico   35.863492
+34              New York   34.860000
+35        North Carolina   34.377632
+36          North Dakota   34.891667
+37                  Ohio   33.257534
+38              Oklahoma   34.058333
+39                Oregon   34.142187
+40          Pennsylvania   34.543548
+41           Puerto Rico   36.986364
+42          Rhode Island   35.178788
+43        South Carolina   33.259091
+44          South Dakota   35.195652
+45             Tennessee   34.109459
+46                 Texas   34.376923
+47                  Utah   34.195082
+48               Vermont   33.118182
+49        Virgin Islands   33.296875
+50              Virginia   34.458824
+51            Washington   33.968421
+52         West Virginia   33.861111
+53             Wisconsin   34.155422
+54               Wyoming   35.516901
+2024-04-12 20:14:54,710 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+8   District of Columbia   30.746875
+26              Missouri   32.762687
+3               Arkansas   32.995161
+18              Kentucky   33.071642
+48               Vermont   33.118182
+19             Louisiana   33.179310
+37                  Ohio   33.257534
+43        South Carolina   33.259091
+49        Virgin Islands   33.296875
+14              Illinois   33.521875
+15               Indiana   33.587013
+23              Michigan   33.737349
+52         West Virginia   33.861111
+16                  Iowa   33.964557
+51            Washington   33.968421
+12                Hawaii   34.004688
+17                Kansas   34.056250
+38              Oklahoma   34.058333
+45             Tennessee   34.109459
+39                Oregon   34.142187
+0                Alabama   34.155172
+53             Wisconsin   34.155422
+47                  Utah   34.195082
+9                Florida   34.273333
+10               Georgia   34.301266
+25           Mississippi   34.315625
+20                 Maine   34.316129
+46                 Texas   34.376923
+35        North Carolina   34.377632
+50              Virginia   34.458824
+11                  Guam   34.485455
+21              Maryland   34.528395
+40          Pennsylvania   34.543548
+22         Massachusetts   34.620312
+7               Delaware   34.673846
+5               Colorado   34.785366
+31         New Hampshire   34.844156
+34              New York   34.860000
+36          North Dakota   34.891667
+28              National   35.085938
+42          Rhode Island   35.178788
+13                 Idaho   35.190909
+44          South Dakota   35.195652
+2                Arizona   35.404688
+54               Wyoming   35.516901
+24             Minnesota   35.545763
+29              Nebraska   35.691429
+4             California   35.724590
+6            Connecticut   35.754286
+33            New Mexico   35.863492
+1                 Alaska   35.902778
+32            New Jersey   36.080597
+27               Montana   36.178261
+30                Nevada   36.358333
+41           Puerto Rico   36.986364
+2024-04-12 20:14:54,716 - app.logger - INFO - Mean for states_mean is {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 20:14:54,718 - app.logger - INFO - Task 8 completed with result {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 20:14:54,720 - app.logger - INFO - Executing task 9
+2024-04-12 20:14:54,736 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+2024-04-12 20:14:54,725 - app.logger - INFO - Job 9 is done
+2024-04-12 20:14:54,797 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+26             26       2019  ...                       RACE           RACEASN
+41             41       2017  ...                        INC           INC2535
+47             47       2013  ...                       RACE           RACEBLK
+55             55       2011  ...                        EDU         EDUHSGRAD
+63             63       2011  ...                      AGEYR         AGEYR5564
+...           ...        ...  ...                        ...               ...
+18620       18620       2011  ...                        EDU         EDUHSGRAD
+18625       18625       2017  ...                        OVR           OVERALL
+18628       18628       2015  ...                       RACE           RACEOTH
+18633       18633       2017  ...                        INC           INC2535
+18645       18645       2017  ...                        GEN            FEMALE
+
+[1525 rows x 34 columns]
+2024-04-12 20:14:54,832 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   43.403571
+1                 Alaska   55.296970
+2                Arizona   51.605556
+3               Arkansas   45.542424
+4             California   55.820588
+5               Colorado   56.774286
+6            Connecticut   49.978571
+7               Delaware   49.748148
+8   District of Columbia   50.876923
+9                Florida   51.437931
+10               Georgia   46.100000
+11                  Guam   44.986667
+12                Hawaii   56.760000
+13                 Idaho   57.753333
+14              Illinois   49.744000
+15               Indiana   44.376923
+16                  Iowa   47.721739
+17                Kansas   47.119355
+18              Kentucky   46.576000
+19             Louisiana   44.630303
+20                 Maine   52.446667
+21              Maryland   47.823077
+22         Massachusetts   50.996970
+23              Michigan   50.534375
+24             Minnesota   51.147222
+25           Mississippi   42.523333
+26              Missouri   48.923810
+27               Montana   55.009091
+28              National   48.532143
+29              Nebraska   49.200000
+30                Nevada   50.811538
+31         New Hampshire   52.581481
+32            New Jersey   48.895000
+33            New Mexico   55.781481
+34              New York   47.045833
+35        North Carolina   47.940625
+36          North Dakota   45.515385
+37                  Ohio   48.273913
+38              Oklahoma   43.755172
+39                Oregon   57.200000
+40          Pennsylvania   48.162222
+41           Puerto Rico   37.320000
+42          Rhode Island   46.251613
+43        South Carolina   47.976471
+44          South Dakota   48.526923
+45             Tennessee   42.825926
+46                 Texas   46.262963
+47                  Utah   52.639394
+48               Vermont   57.480645
+49        Virgin Islands   49.800000
+50              Virginia   48.936667
+51            Washington   55.012903
+52         West Virginia   48.696000
+53             Wisconsin   55.104545
+54               Wyoming   49.500000
+2024-04-12 20:14:54,841 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   37.320000
+25           Mississippi   42.523333
+45             Tennessee   42.825926
+0                Alabama   43.403571
+38              Oklahoma   43.755172
+15               Indiana   44.376923
+19             Louisiana   44.630303
+11                  Guam   44.986667
+36          North Dakota   45.515385
+3               Arkansas   45.542424
+10               Georgia   46.100000
+42          Rhode Island   46.251613
+46                 Texas   46.262963
+18              Kentucky   46.576000
+34              New York   47.045833
+17                Kansas   47.119355
+16                  Iowa   47.721739
+21              Maryland   47.823077
+35        North Carolina   47.940625
+43        South Carolina   47.976471
+40          Pennsylvania   48.162222
+37                  Ohio   48.273913
+44          South Dakota   48.526923
+28              National   48.532143
+52         West Virginia   48.696000
+32            New Jersey   48.895000
+26              Missouri   48.923810
+50              Virginia   48.936667
+29              Nebraska   49.200000
+54               Wyoming   49.500000
+14              Illinois   49.744000
+7               Delaware   49.748148
+49        Virgin Islands   49.800000
+6            Connecticut   49.978571
+23              Michigan   50.534375
+30                Nevada   50.811538
+8   District of Columbia   50.876923
+22         Massachusetts   50.996970
+24             Minnesota   51.147222
+9                Florida   51.437931
+2                Arizona   51.605556
+20                 Maine   52.446667
+31         New Hampshire   52.581481
+47                  Utah   52.639394
+27               Montana   55.009091
+51            Washington   55.012903
+53             Wisconsin   55.104545
+1                 Alaska   55.296970
+33            New Mexico   55.781481
+4             California   55.820588
+12                Hawaii   56.760000
+5               Colorado   56.774286
+39                Oregon   57.200000
+48               Vermont   57.480645
+13                 Idaho   57.753333
+2024-04-12 20:14:54,848 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 20:14:54,853 - app.logger - INFO - Task 9 completed with result {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 20:19:51,829 - app.logger - INFO - Thread started
+2024-04-12 20:19:51,843 - app.logger - INFO - Thread started
+2024-04-12 20:20:23,055 - app.logger - INFO - Executing task 1
+2024-04-12 20:20:23,055 - app.logger - INFO - Handling task states_mean, Percent of adults who report consuming fruit less than one time daily
+2024-04-12 20:20:23,136 - app.logger - INFO - Job 1 is still running
+2024-04-12 20:20:23,142 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+30             30       2021  ...                        INC             INCNR
+43             43       2019  ...                        OVR           OVERALL
+164           164       2019  ...                       RACE           RACEHPI
+180           180       2019  ...                       RACE           RACENAA
+215           215       2019  ...                       RACE           RACEHIS
+...           ...        ...  ...                        ...               ...
+18525       18525       2019  ...                        GEN            FEMALE
+18562       18562       2021  ...                        INC           INC3550
+18569       18569       2019  ...                        GEN              MALE
+18582       18582       2021  ...                        INC         INC75PLUS
+18638       18638       2017  ...                        INC           INC1525
+
+[864 rows x 34 columns]
+2024-04-12 20:20:23,149 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   44.075000
+1                 Alaska   40.200000
+2                Arizona   39.294737
+3               Arkansas   43.731579
+4             California   37.176471
+5               Colorado   37.511111
+6            Connecticut   35.276923
+7               Delaware   38.143750
+8   District of Columbia   35.361905
+9                Florida   36.750000
+10               Georgia   40.080000
+11                  Guam   43.356250
+12                Hawaii   39.005882
+13                 Idaho   39.954545
+14              Illinois   37.412500
+15               Indiana   42.688889
+16                  Iowa   38.886364
+17                Kansas   40.135714
+18              Kentucky   43.000000
+19             Louisiana   46.168750
+20                 Maine   35.435000
+21              Maryland   35.433333
+22         Massachusetts   34.420000
+23              Michigan   39.441176
+24             Minnesota   37.133333
+25           Mississippi   45.316667
+26              Missouri   42.094444
+27               Montana   39.940000
+28              National   38.766667
+29              Nebraska   41.033333
+30                Nevada   43.435714
+31         New Hampshire   35.438095
+32            New Jersey   36.206667
+33            New Mexico   41.055556
+34              New York   36.735714
+35        North Carolina   40.580000
+36          North Dakota   38.525000
+37                  Ohio   41.087500
+38              Oklahoma   45.454545
+39                Oregon   38.768421
+40          Pennsylvania   38.606667
+41           Puerto Rico   49.416667
+42          Rhode Island   35.416667
+43        South Carolina   42.700000
+44          South Dakota   40.384615
+45             Tennessee   41.950000
+46                 Texas   40.123077
+47                  Utah   36.050000
+48               Vermont   34.394118
+49        Virgin Islands   40.700000
+50              Virginia   39.475000
+51            Washington   39.833333
+52         West Virginia   45.170000
+53             Wisconsin   38.007692
+54               Wyoming   41.935294
+2024-04-12 20:20:23,159 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+48               Vermont   34.394118
+22         Massachusetts   34.420000
+6            Connecticut   35.276923
+8   District of Columbia   35.361905
+42          Rhode Island   35.416667
+21              Maryland   35.433333
+20                 Maine   35.435000
+31         New Hampshire   35.438095
+47                  Utah   36.050000
+32            New Jersey   36.206667
+34              New York   36.735714
+9                Florida   36.750000
+24             Minnesota   37.133333
+4             California   37.176471
+14              Illinois   37.412500
+5               Colorado   37.511111
+53             Wisconsin   38.007692
+7               Delaware   38.143750
+36          North Dakota   38.525000
+40          Pennsylvania   38.606667
+28              National   38.766667
+39                Oregon   38.768421
+16                  Iowa   38.886364
+12                Hawaii   39.005882
+2                Arizona   39.294737
+23              Michigan   39.441176
+50              Virginia   39.475000
+51            Washington   39.833333
+27               Montana   39.940000
+13                 Idaho   39.954545
+10               Georgia   40.080000
+46                 Texas   40.123077
+17                Kansas   40.135714
+1                 Alaska   40.200000
+44          South Dakota   40.384615
+35        North Carolina   40.580000
+49        Virgin Islands   40.700000
+29              Nebraska   41.033333
+33            New Mexico   41.055556
+37                  Ohio   41.087500
+54               Wyoming   41.935294
+45             Tennessee   41.950000
+26              Missouri   42.094444
+15               Indiana   42.688889
+43        South Carolina   42.700000
+18              Kentucky   43.000000
+11                  Guam   43.356250
+30                Nevada   43.435714
+3               Arkansas   43.731579
+0                Alabama   44.075000
+52         West Virginia   45.170000
+25           Mississippi   45.316667
+38              Oklahoma   45.454545
+19             Louisiana   46.168750
+41           Puerto Rico   49.416667
+2024-04-12 20:20:23,196 - app.logger - INFO - Mean for states_mean is {'Vermont': 34.39411764705883, 'Massachusetts': 34.42, 'Connecticut': 35.276923076923076, 'District of Columbia': 35.36190476190476, 'Rhode Island': 35.416666666666664, 'Maryland': 35.43333333333333, 'Maine': 35.435, 'New Hampshire': 35.438095238095244, 'Utah': 36.05, 'New Jersey': 36.20666666666667, 'New York': 36.73571428571428, 'Florida': 36.75, 'Minnesota': 37.13333333333333, 'California': 37.1764705882353, 'Illinois': 37.4125, 'Colorado': 37.51111111111111, 'Wisconsin': 38.00769230769231, 'Delaware': 38.14375, 'North Dakota': 38.525, 'Pennsylvania': 38.60666666666667, 'National': 38.766666666666666, 'Oregon': 38.76842105263158, 'Iowa': 38.88636363636363, 'Hawaii': 39.00588235294118, 'Arizona': 39.294736842105266, 'Michigan': 39.44117647058823, 'Virginia': 39.475, 'Washington': 39.833333333333336, 'Montana': 39.94, 'Idaho': 39.95454545454545, 'Georgia': 40.080000000000005, 'Texas': 40.12307692307692, 'Kansas': 40.135714285714286, 'Alaska': 40.199999999999996, 'South Dakota': 40.38461538461539, 'North Carolina': 40.580000000000005, 'Virgin Islands': 40.7, 'Nebraska': 41.03333333333334, 'New Mexico': 41.05555555555556, 'Ohio': 41.0875, 'Wyoming': 41.93529411764706, 'Tennessee': 41.95, 'Missouri': 42.09444444444445, 'Indiana': 42.68888888888889, 'South Carolina': 42.699999999999996, 'Kentucky': 43.0, 'Guam': 43.35625, 'Nevada': 43.43571428571429, 'Arkansas': 43.73157894736842, 'Alabama': 44.075, 'West Virginia': 45.17, 'Mississippi': 45.31666666666666, 'Oklahoma': 45.45454545454545, 'Louisiana': 46.16875, 'Puerto Rico': 49.416666666666664}
+2024-04-12 20:20:23,202 - app.logger - INFO - Task 1 completed with result {'Vermont': 34.39411764705883, 'Massachusetts': 34.42, 'Connecticut': 35.276923076923076, 'District of Columbia': 35.36190476190476, 'Rhode Island': 35.416666666666664, 'Maryland': 35.43333333333333, 'Maine': 35.435, 'New Hampshire': 35.438095238095244, 'Utah': 36.05, 'New Jersey': 36.20666666666667, 'New York': 36.73571428571428, 'Florida': 36.75, 'Minnesota': 37.13333333333333, 'California': 37.1764705882353, 'Illinois': 37.4125, 'Colorado': 37.51111111111111, 'Wisconsin': 38.00769230769231, 'Delaware': 38.14375, 'North Dakota': 38.525, 'Pennsylvania': 38.60666666666667, 'National': 38.766666666666666, 'Oregon': 38.76842105263158, 'Iowa': 38.88636363636363, 'Hawaii': 39.00588235294118, 'Arizona': 39.294736842105266, 'Michigan': 39.44117647058823, 'Virginia': 39.475, 'Washington': 39.833333333333336, 'Montana': 39.94, 'Idaho': 39.95454545454545, 'Georgia': 40.080000000000005, 'Texas': 40.12307692307692, 'Kansas': 40.135714285714286, 'Alaska': 40.199999999999996, 'South Dakota': 40.38461538461539, 'North Carolina': 40.580000000000005, 'Virgin Islands': 40.7, 'Nebraska': 41.03333333333334, 'New Mexico': 41.05555555555556, 'Ohio': 41.0875, 'Wyoming': 41.93529411764706, 'Tennessee': 41.95, 'Missouri': 42.09444444444445, 'Indiana': 42.68888888888889, 'South Carolina': 42.699999999999996, 'Kentucky': 43.0, 'Guam': 43.35625, 'Nevada': 43.43571428571429, 'Arkansas': 43.73157894736842, 'Alabama': 44.075, 'West Virginia': 45.17, 'Mississippi': 45.31666666666666, 'Oklahoma': 45.45454545454545, 'Louisiana': 46.16875, 'Puerto Rico': 49.416666666666664}
+2024-04-12 20:20:23,345 - app.logger - INFO - Job 1 is done
+2024-04-12 20:20:23,352 - app.logger - INFO - Executing task 2
+2024-04-12 20:20:23,357 - app.logger - INFO - Handling task states_mean, Percent of adults who engage in no leisure-time physical activity
+2024-04-12 20:20:23,407 - app.logger - INFO - Job 2 is still running
+2024-04-12 20:20:23,417 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+5               5       2011  ...                      AGEYR         AGEYR4554
+6               6       2017  ...                      AGEYR         AGEYR5564
+8               8       2013  ...                       RACE         RACE2PLUS
+10             10       2017  ...                        INC           INC1525
+11             11       2016  ...                        INC           INC1525
+...           ...        ...  ...                        ...               ...
+18568       18568       2015  ...                      AGEYR         AGEYR5564
+18570       18570       2017  ...                       RACE           RACEBLK
+18619       18619       2016  ...                       RACE           RACENAA
+18626       18626       2022  ...                        INC         INC75PLUS
+18648       18648       2017  ...                        GEN            FEMALE
+
+[3625 rows x 34 columns]
+2024-04-12 20:20:23,430 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   29.892500
+1                 Alaska   21.801562
+2                Arizona   25.140909
+3               Arkansas   30.601695
+4             California   21.071014
+5               Colorado   19.366667
+6            Connecticut   24.643243
+7               Delaware   28.183077
+8   District of Columbia   21.598214
+9                Florida   25.997260
+10               Georgia   27.155000
+11                  Guam   28.134884
+12                Hawaii   21.836923
+13                 Idaho   22.980952
+14              Illinois   24.532857
+15               Indiana   28.235714
+16                  Iowa   26.221053
+17                Kansas   25.945000
+18              Kentucky   31.028169
+19             Louisiana   29.544595
+20                 Maine   23.935714
+21              Maryland   25.071642
+22         Massachusetts   24.813514
+23              Michigan   25.141772
+24             Minnesota   22.737879
+25           Mississippi   30.129577
+26              Missouri   29.029851
+27               Montana   22.332877
+28              National   26.266250
+29              Nebraska   24.844304
+30                Nevada   25.481034
+31         New Hampshire   22.409333
+32            New Jersey   29.381429
+33            New Mexico   24.122727
+34              New York   26.800000
+35        North Carolina   25.249206
+36          North Dakota   27.801613
+37                  Ohio   28.786111
+38              Oklahoma   28.720833
+39                Oregon   20.956164
+40          Pennsylvania   25.143284
+41           Puerto Rico   40.627500
+42          Rhode Island   26.243103
+43        South Carolina   27.190789
+44          South Dakota   23.455844
+45             Tennessee   28.412281
+46                 Texas   27.891803
+47                  Utah   21.285937
+48               Vermont   21.813235
+49        Virgin Islands   26.255000
+50              Virginia   24.392063
+51            Washington   21.251389
+52         West Virginia   28.400000
+53             Wisconsin   22.913514
+54               Wyoming   25.096721
+2024-04-12 20:20:23,440 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+5               Colorado   19.366667
+39                Oregon   20.956164
+4             California   21.071014
+51            Washington   21.251389
+47                  Utah   21.285937
+8   District of Columbia   21.598214
+1                 Alaska   21.801562
+48               Vermont   21.813235
+12                Hawaii   21.836923
+27               Montana   22.332877
+31         New Hampshire   22.409333
+24             Minnesota   22.737879
+53             Wisconsin   22.913514
+13                 Idaho   22.980952
+44          South Dakota   23.455844
+20                 Maine   23.935714
+33            New Mexico   24.122727
+50              Virginia   24.392063
+14              Illinois   24.532857
+6            Connecticut   24.643243
+22         Massachusetts   24.813514
+29              Nebraska   24.844304
+21              Maryland   25.071642
+54               Wyoming   25.096721
+2                Arizona   25.140909
+23              Michigan   25.141772
+40          Pennsylvania   25.143284
+35        North Carolina   25.249206
+30                Nevada   25.481034
+17                Kansas   25.945000
+9                Florida   25.997260
+16                  Iowa   26.221053
+42          Rhode Island   26.243103
+49        Virgin Islands   26.255000
+28              National   26.266250
+34              New York   26.800000
+10               Georgia   27.155000
+43        South Carolina   27.190789
+36          North Dakota   27.801613
+46                 Texas   27.891803
+11                  Guam   28.134884
+7               Delaware   28.183077
+15               Indiana   28.235714
+52         West Virginia   28.400000
+45             Tennessee   28.412281
+38              Oklahoma   28.720833
+37                  Ohio   28.786111
+26              Missouri   29.029851
+32            New Jersey   29.381429
+19             Louisiana   29.544595
+0                Alabama   29.892500
+25           Mississippi   30.129577
+3               Arkansas   30.601695
+18              Kentucky   31.028169
+41           Puerto Rico   40.627500
+2024-04-12 20:20:23,446 - app.logger - INFO - Mean for states_mean is {'Colorado': 19.366666666666667, 'Oregon': 20.956164383561642, 'California': 21.071014492753626, 'Washington': 21.251388888888886, 'Utah': 21.2859375, 'District of Columbia': 21.598214285714285, 'Alaska': 21.8015625, 'Vermont': 21.813235294117646, 'Hawaii': 21.836923076923078, 'Montana': 22.332876712328765, 'New Hampshire': 22.409333333333333, 'Minnesota': 22.73787878787879, 'Wisconsin': 22.91351351351351, 'Idaho': 22.98095238095238, 'South Dakota': 23.455844155844154, 'Maine': 23.935714285714287, 'New Mexico': 24.12272727272727, 'Virginia': 24.392063492063492, 'Illinois': 24.532857142857143, 'Connecticut': 24.643243243243244, 'Massachusetts': 24.813513513513513, 'Nebraska': 24.844303797468356, 'Maryland': 25.071641791044776, 'Wyoming': 25.096721311475413, 'Arizona': 25.14090909090909, 'Michigan': 25.141772151898735, 'Pennsylvania': 25.143283582089555, 'North Carolina': 25.24920634920635, 'Nevada': 25.481034482758623, 'Kansas': 25.945, 'Florida': 25.997260273972604, 'Iowa': 26.221052631578946, 'Rhode Island': 26.24310344827586, 'Virgin Islands': 26.255000000000003, 'National': 26.266250000000003, 'New York': 26.799999999999997, 'Georgia': 27.154999999999998, 'South Carolina': 27.19078947368421, 'North Dakota': 27.801612903225806, 'Texas': 27.891803278688528, 'Guam': 28.134883720930233, 'Delaware': 28.183076923076925, 'Indiana': 28.235714285714288, 'West Virginia': 28.400000000000002, 'Tennessee': 28.412280701754387, 'Oklahoma': 28.720833333333335, 'Ohio': 28.78611111111111, 'Missouri': 29.029850746268657, 'New Jersey': 29.381428571428568, 'Louisiana': 29.544594594594596, 'Alabama': 29.892500000000002, 'Mississippi': 30.12957746478873, 'Arkansas': 30.60169491525424, 'Kentucky': 31.028169014084508, 'Puerto Rico': 40.6275}
+2024-04-12 20:20:23,452 - app.logger - INFO - Task 2 completed with result {'Colorado': 19.366666666666667, 'Oregon': 20.956164383561642, 'California': 21.071014492753626, 'Washington': 21.251388888888886, 'Utah': 21.2859375, 'District of Columbia': 21.598214285714285, 'Alaska': 21.8015625, 'Vermont': 21.813235294117646, 'Hawaii': 21.836923076923078, 'Montana': 22.332876712328765, 'New Hampshire': 22.409333333333333, 'Minnesota': 22.73787878787879, 'Wisconsin': 22.91351351351351, 'Idaho': 22.98095238095238, 'South Dakota': 23.455844155844154, 'Maine': 23.935714285714287, 'New Mexico': 24.12272727272727, 'Virginia': 24.392063492063492, 'Illinois': 24.532857142857143, 'Connecticut': 24.643243243243244, 'Massachusetts': 24.813513513513513, 'Nebraska': 24.844303797468356, 'Maryland': 25.071641791044776, 'Wyoming': 25.096721311475413, 'Arizona': 25.14090909090909, 'Michigan': 25.141772151898735, 'Pennsylvania': 25.143283582089555, 'North Carolina': 25.24920634920635, 'Nevada': 25.481034482758623, 'Kansas': 25.945, 'Florida': 25.997260273972604, 'Iowa': 26.221052631578946, 'Rhode Island': 26.24310344827586, 'Virgin Islands': 26.255000000000003, 'National': 26.266250000000003, 'New York': 26.799999999999997, 'Georgia': 27.154999999999998, 'South Carolina': 27.19078947368421, 'North Dakota': 27.801612903225806, 'Texas': 27.891803278688528, 'Guam': 28.134883720930233, 'Delaware': 28.183076923076925, 'Indiana': 28.235714285714288, 'West Virginia': 28.400000000000002, 'Tennessee': 28.412280701754387, 'Oklahoma': 28.720833333333335, 'Ohio': 28.78611111111111, 'Missouri': 29.029850746268657, 'New Jersey': 29.381428571428568, 'Louisiana': 29.544594594594596, 'Alabama': 29.892500000000002, 'Mississippi': 30.12957746478873, 'Arkansas': 30.60169491525424, 'Kentucky': 31.028169014084508, 'Puerto Rico': 40.6275}
+2024-04-12 20:20:23,621 - app.logger - INFO - Job 2 is done
+2024-04-12 20:20:23,626 - app.logger - INFO - Executing task 3
+2024-04-12 20:20:23,626 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+2024-04-12 20:20:23,666 - app.logger - INFO - Job 3 is still running
+2024-04-12 20:20:23,720 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+12             12       2019  ...                       RACE           RACENAA
+15             15       2019  ...                      AGEYR       AGEYR65PLUS
+65             65       2015  ...                      AGEYR         AGEYR5564
+67             67       2015  ...                       RACE           RACEOTH
+72             72       2019  ...                        INC           INC3550
+...           ...        ...  ...                        ...               ...
+18607       18607       2011  ...                      AGEYR       AGEYR65PLUS
+18608       18608       2019  ...                       RACE           RACEBLK
+18636       18636       2011  ...                       RACE           RACEHPI
+18642       18642       2011  ...                       RACE           RACENAA
+18646       18646       2015  ...                       RACE           RACEOTH
+
+[1487 rows x 34 columns]
+2024-04-12 20:20:23,737 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   26.413636
+1                 Alaska   37.250000
+2                Arizona   32.025000
+3               Arkansas   29.285714
+4             California   37.295238
+5               Colorado   37.442308
+6            Connecticut   29.221875
+7               Delaware   30.551724
+8   District of Columbia   31.443333
+9                Florida   33.536364
+10               Georgia   30.733333
+11                  Guam   29.431250
+12                Hawaii   36.765000
+13                 Idaho   34.120588
+14              Illinois   30.313889
+15               Indiana   27.800000
+16                  Iowa   27.413043
+17                Kansas   29.343478
+18              Kentucky   28.174074
+19             Louisiana   28.479310
+20                 Maine   35.316000
+21              Maryland   31.219231
+22         Massachusetts   32.250000
+23              Michigan   32.270370
+24             Minnesota   32.366667
+25           Mississippi   23.832258
+26              Missouri   29.067742
+27               Montana   38.186667
+28              National   32.023333
+29              Nebraska   29.017391
+30                Nevada   31.636364
+31         New Hampshire   34.593333
+32            New Jersey   31.000000
+33            New Mexico   34.875000
+34              New York   29.847619
+35        North Carolina   28.046667
+36          North Dakota   27.796296
+37                  Ohio   30.900000
+38              Oklahoma   25.171429
+39                Oregon   37.193939
+40          Pennsylvania   30.423077
+41           Puerto Rico   17.875000
+42          Rhode Island   29.253659
+43        South Carolina   30.496429
+44          South Dakota   29.696552
+45             Tennessee   26.694118
+46                 Texas   25.108696
+47                  Utah   32.630000
+48               Vermont   37.634615
+49        Virgin Islands   31.100000
+50              Virginia   31.069231
+51            Washington   34.704545
+52         West Virginia   30.211538
+53             Wisconsin   35.371429
+54               Wyoming   33.713043
+2024-04-12 20:20:23,748 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   17.875000
+25           Mississippi   23.832258
+46                 Texas   25.108696
+38              Oklahoma   25.171429
+0                Alabama   26.413636
+45             Tennessee   26.694118
+16                  Iowa   27.413043
+36          North Dakota   27.796296
+15               Indiana   27.800000
+35        North Carolina   28.046667
+18              Kentucky   28.174074
+19             Louisiana   28.479310
+29              Nebraska   29.017391
+26              Missouri   29.067742
+6            Connecticut   29.221875
+42          Rhode Island   29.253659
+3               Arkansas   29.285714
+17                Kansas   29.343478
+11                  Guam   29.431250
+44          South Dakota   29.696552
+34              New York   29.847619
+52         West Virginia   30.211538
+14              Illinois   30.313889
+40          Pennsylvania   30.423077
+43        South Carolina   30.496429
+7               Delaware   30.551724
+10               Georgia   30.733333
+37                  Ohio   30.900000
+32            New Jersey   31.000000
+50              Virginia   31.069231
+49        Virgin Islands   31.100000
+21              Maryland   31.219231
+8   District of Columbia   31.443333
+30                Nevada   31.636364
+28              National   32.023333
+2                Arizona   32.025000
+22         Massachusetts   32.250000
+23              Michigan   32.270370
+24             Minnesota   32.366667
+47                  Utah   32.630000
+9                Florida   33.536364
+54               Wyoming   33.713043
+13                 Idaho   34.120588
+31         New Hampshire   34.593333
+51            Washington   34.704545
+33            New Mexico   34.875000
+20                 Maine   35.316000
+53             Wisconsin   35.371429
+12                Hawaii   36.765000
+39                Oregon   37.193939
+1                 Alaska   37.250000
+4             California   37.295238
+5               Colorado   37.442308
+48               Vermont   37.634615
+27               Montana   38.186667
+2024-04-12 20:20:23,754 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 25.17142857142857, 'Alabama': 26.413636363636364, 'Tennessee': 26.694117647058825, 'Iowa': 27.41304347826087, 'North Dakota': 27.796296296296298, 'Indiana': 27.8, 'North Carolina': 28.046666666666667, 'Kentucky': 28.174074074074074, 'Louisiana': 28.479310344827585, 'Nebraska': 29.017391304347825, 'Missouri': 29.067741935483873, 'Connecticut': 29.221875, 'Rhode Island': 29.25365853658537, 'Arkansas': 29.285714285714285, 'Kansas': 29.343478260869563, 'Guam': 29.43125, 'South Dakota': 29.696551724137933, 'New York': 29.847619047619045, 'West Virginia': 30.21153846153846, 'Illinois': 30.313888888888886, 'Pennsylvania': 30.423076923076923, 'South Carolina': 30.49642857142857, 'Delaware': 30.551724137931036, 'Georgia': 30.73333333333333, 'Ohio': 30.9, 'New Jersey': 31.0, 'Virginia': 31.069230769230767, 'Virgin Islands': 31.1, 'Maryland': 31.21923076923077, 'District of Columbia': 31.44333333333333, 'Nevada': 31.636363636363637, 'National': 32.02333333333333, 'Arizona': 32.025, 'Massachusetts': 32.25, 'Michigan': 32.270370370370365, 'Minnesota': 32.36666666666667, 'Utah': 32.63, 'Florida': 33.53636363636364, 'Wyoming': 33.71304347826087, 'Idaho': 34.120588235294115, 'New Hampshire': 34.593333333333334, 'Washington': 34.70454545454545, 'New Mexico': 34.875, 'Maine': 35.316, 'Wisconsin': 35.37142857142857, 'Hawaii': 36.765, 'Oregon': 37.193939393939395, 'Alaska': 37.25, 'California': 37.2952380952381, 'Colorado': 37.44230769230769, 'Vermont': 37.63461538461539, 'Montana': 38.18666666666666}
+2024-04-12 20:20:23,765 - app.logger - INFO - Task 3 completed with result {'Puerto Rico': 17.875, 'Mississippi': 23.83225806451613, 'Texas': 25.108695652173914, 'Oklahoma': 25.17142857142857, 'Alabama': 26.413636363636364, 'Tennessee': 26.694117647058825, 'Iowa': 27.41304347826087, 'North Dakota': 27.796296296296298, 'Indiana': 27.8, 'North Carolina': 28.046666666666667, 'Kentucky': 28.174074074074074, 'Louisiana': 28.479310344827585, 'Nebraska': 29.017391304347825, 'Missouri': 29.067741935483873, 'Connecticut': 29.221875, 'Rhode Island': 29.25365853658537, 'Arkansas': 29.285714285714285, 'Kansas': 29.343478260869563, 'Guam': 29.43125, 'South Dakota': 29.696551724137933, 'New York': 29.847619047619045, 'West Virginia': 30.21153846153846, 'Illinois': 30.313888888888886, 'Pennsylvania': 30.423076923076923, 'South Carolina': 30.49642857142857, 'Delaware': 30.551724137931036, 'Georgia': 30.73333333333333, 'Ohio': 30.9, 'New Jersey': 31.0, 'Virginia': 31.069230769230767, 'Virgin Islands': 31.1, 'Maryland': 31.21923076923077, 'District of Columbia': 31.44333333333333, 'Nevada': 31.636363636363637, 'National': 32.02333333333333, 'Arizona': 32.025, 'Massachusetts': 32.25, 'Michigan': 32.270370370370365, 'Minnesota': 32.36666666666667, 'Utah': 32.63, 'Florida': 33.53636363636364, 'Wyoming': 33.71304347826087, 'Idaho': 34.120588235294115, 'New Hampshire': 34.593333333333334, 'Washington': 34.70454545454545, 'New Mexico': 34.875, 'Maine': 35.316, 'Wisconsin': 35.37142857142857, 'Hawaii': 36.765, 'Oregon': 37.193939393939395, 'Alaska': 37.25, 'California': 37.2952380952381, 'Colorado': 37.44230769230769, 'Vermont': 37.63461538461539, 'Montana': 38.18666666666666}
+2024-04-12 20:20:23,885 - app.logger - INFO - Job 3 is done
+2024-04-12 20:20:23,893 - app.logger - INFO - Executing task 4
+2024-04-12 20:20:23,915 - app.logger - INFO - Job 4 is still running
+2024-04-12 20:20:23,916 - app.logger - INFO - Handling task states_mean, Percent of adults aged 18 years and older who have obesity
+2024-04-12 20:20:23,995 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+0               0       2017  ...                        INC         INC75PLUS
+3               3       2017  ...                        INC           INC2535
+13             13       2022  ...                        INC         INCLESS15
+17             17       2020  ...                        INC         INCLESS15
+20             20       2017  ...                        GEN              MALE
+...           ...        ...  ...                        ...               ...
+18629       18629       2013  ...                       RACE           RACEASN
+18630       18630       2022  ...                      AGEYR       AGEYR65PLUS
+18632       18632       2015  ...                        INC         INC75PLUS
+18635       18635       2022  ...                       RACE         RACE2PLUS
+18639       18639       2011  ...                      AGEYR         AGEYR5564
+
+[3569 rows x 34 columns]
+2024-04-12 20:20:24,010 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   35.122667
+1                 Alaska   29.866154
+2                Arizona   30.683582
+3               Arkansas   35.425676
+4             California   26.814516
+5               Colorado   23.071429
+6            Connecticut   28.431250
+7               Delaware   31.129851
+8   District of Columbia   25.541429
+9                Florida   27.601099
+10               Georgia   31.468254
+11                  Guam   31.863636
+12                Hawaii   27.034722
+13                 Idaho   31.049231
+14              Illinois   30.129310
+15               Indiana   34.251852
+16                  Iowa   33.472727
+17                Kansas   33.815000
+18              Kentucky   34.306154
+19             Louisiana   36.266197
+20                 Maine   30.631034
+21              Maryland   30.373333
+22         Massachusetts   26.198684
+23              Michigan   34.374510
+24             Minnesota   29.832836
+25           Mississippi   36.506944
+26              Missouri   33.673134
+27               Montana   28.387143
+28              National   30.700000
+29              Nebraska   31.123077
+30                Nevada   28.890909
+31         New Hampshire   29.764865
+32            New Jersey   25.451786
+33            New Mexico   30.956757
+34              New York   27.598507
+35        North Carolina   32.203279
+36          North Dakota   33.261538
+37                  Ohio   33.700000
+38              Oklahoma   34.978333
+39                Oregon   29.452542
+40          Pennsylvania   30.706349
+41           Puerto Rico   31.341538
+42          Rhode Island   28.025000
+43        South Carolina   34.126866
+44          South Dakota   33.317333
+45             Tennessee   34.513636
+46                 Texas   31.429310
+47                  Utah   27.727397
+48               Vermont   28.545902
+49        Virgin Islands   32.751515
+50              Virginia   30.772973
+51            Washington   30.152113
+52         West Virginia   36.800000
+53             Wisconsin   33.342623
+54               Wyoming   29.255932
+2024-04-12 20:20:24,020 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+5               Colorado   23.071429
+32            New Jersey   25.451786
+8   District of Columbia   25.541429
+22         Massachusetts   26.198684
+4             California   26.814516
+12                Hawaii   27.034722
+34              New York   27.598507
+9                Florida   27.601099
+47                  Utah   27.727397
+42          Rhode Island   28.025000
+27               Montana   28.387143
+6            Connecticut   28.431250
+48               Vermont   28.545902
+30                Nevada   28.890909
+54               Wyoming   29.255932
+39                Oregon   29.452542
+31         New Hampshire   29.764865
+24             Minnesota   29.832836
+1                 Alaska   29.866154
+14              Illinois   30.129310
+51            Washington   30.152113
+21              Maryland   30.373333
+20                 Maine   30.631034
+2                Arizona   30.683582
+28              National   30.700000
+40          Pennsylvania   30.706349
+50              Virginia   30.772973
+33            New Mexico   30.956757
+13                 Idaho   31.049231
+29              Nebraska   31.123077
+7               Delaware   31.129851
+41           Puerto Rico   31.341538
+46                 Texas   31.429310
+10               Georgia   31.468254
+11                  Guam   31.863636
+35        North Carolina   32.203279
+49        Virgin Islands   32.751515
+36          North Dakota   33.261538
+44          South Dakota   33.317333
+53             Wisconsin   33.342623
+16                  Iowa   33.472727
+26              Missouri   33.673134
+37                  Ohio   33.700000
+17                Kansas   33.815000
+43        South Carolina   34.126866
+15               Indiana   34.251852
+18              Kentucky   34.306154
+23              Michigan   34.374510
+45             Tennessee   34.513636
+38              Oklahoma   34.978333
+0                Alabama   35.122667
+3               Arkansas   35.425676
+19             Louisiana   36.266197
+25           Mississippi   36.506944
+52         West Virginia   36.800000
+2024-04-12 20:20:24,026 - app.logger - INFO - Mean for states_mean is {'Colorado': 23.071428571428573, 'New Jersey': 25.451785714285712, 'District of Columbia': 25.541428571428572, 'Massachusetts': 26.198684210526313, 'California': 26.81451612903226, 'Hawaii': 27.03472222222222, 'New York': 27.598507462686566, 'Florida': 27.6010989010989, 'Utah': 27.72739726027397, 'Rhode Island': 28.025000000000002, 'Montana': 28.387142857142855, 'Connecticut': 28.43125, 'Vermont': 28.54590163934426, 'Nevada': 28.89090909090909, 'Wyoming': 29.25593220338983, 'Oregon': 29.452542372881357, 'New Hampshire': 29.764864864864865, 'Minnesota': 29.83283582089552, 'Alaska': 29.866153846153846, 'Illinois': 30.129310344827587, 'Washington': 30.15211267605634, 'Maryland': 30.373333333333335, 'Maine': 30.63103448275862, 'Arizona': 30.683582089552242, 'National': 30.700000000000003, 'Pennsylvania': 30.706349206349206, 'Virginia': 30.77297297297297, 'New Mexico': 30.95675675675676, 'Idaho': 31.04923076923077, 'Nebraska': 31.123076923076923, 'Delaware': 31.129850746268655, 'Puerto Rico': 31.341538461538462, 'Texas': 31.429310344827588, 'Georgia': 31.46825396825397, 'Guam': 31.863636363636363, 'North Carolina': 32.20327868852459, 'Virgin Islands': 32.75151515151515, 'North Dakota': 33.261538461538464, 'South Dakota': 33.31733333333334, 'Wisconsin': 33.342622950819674, 'Iowa': 33.47272727272727, 'Missouri': 33.67313432835821, 'Ohio': 33.7, 'Kansas': 33.815000000000005, 'South Carolina': 34.12686567164179, 'Indiana': 34.25185185185185, 'Kentucky': 34.30615384615385, 'Michigan': 34.37450980392157, 'Tennessee': 34.513636363636365, 'Oklahoma': 34.97833333333333, 'Alabama': 35.12266666666667, 'Arkansas': 35.42567567567568, 'Louisiana': 36.26619718309859, 'Mississippi': 36.50694444444444, 'West Virginia': 36.800000000000004}
+2024-04-12 20:20:24,032 - app.logger - INFO - Task 4 completed with result {'Colorado': 23.071428571428573, 'New Jersey': 25.451785714285712, 'District of Columbia': 25.541428571428572, 'Massachusetts': 26.198684210526313, 'California': 26.81451612903226, 'Hawaii': 27.03472222222222, 'New York': 27.598507462686566, 'Florida': 27.6010989010989, 'Utah': 27.72739726027397, 'Rhode Island': 28.025000000000002, 'Montana': 28.387142857142855, 'Connecticut': 28.43125, 'Vermont': 28.54590163934426, 'Nevada': 28.89090909090909, 'Wyoming': 29.25593220338983, 'Oregon': 29.452542372881357, 'New Hampshire': 29.764864864864865, 'Minnesota': 29.83283582089552, 'Alaska': 29.866153846153846, 'Illinois': 30.129310344827587, 'Washington': 30.15211267605634, 'Maryland': 30.373333333333335, 'Maine': 30.63103448275862, 'Arizona': 30.683582089552242, 'National': 30.700000000000003, 'Pennsylvania': 30.706349206349206, 'Virginia': 30.77297297297297, 'New Mexico': 30.95675675675676, 'Idaho': 31.04923076923077, 'Nebraska': 31.123076923076923, 'Delaware': 31.129850746268655, 'Puerto Rico': 31.341538461538462, 'Texas': 31.429310344827588, 'Georgia': 31.46825396825397, 'Guam': 31.863636363636363, 'North Carolina': 32.20327868852459, 'Virgin Islands': 32.75151515151515, 'North Dakota': 33.261538461538464, 'South Dakota': 33.31733333333334, 'Wisconsin': 33.342622950819674, 'Iowa': 33.47272727272727, 'Missouri': 33.67313432835821, 'Ohio': 33.7, 'Kansas': 33.815000000000005, 'South Carolina': 34.12686567164179, 'Indiana': 34.25185185185185, 'Kentucky': 34.30615384615385, 'Michigan': 34.37450980392157, 'Tennessee': 34.513636363636365, 'Oklahoma': 34.97833333333333, 'Alabama': 35.12266666666667, 'Arkansas': 35.42567567567568, 'Louisiana': 36.26619718309859, 'Mississippi': 36.50694444444444, 'West Virginia': 36.800000000000004}
+2024-04-12 20:20:24,121 - app.logger - INFO - Job 4 is done
+2024-04-12 20:20:24,126 - app.logger - INFO - Executing task 5
+2024-04-12 20:20:24,134 - app.logger - INFO - Handling task states_mean, Percent of adults who engage in muscle-strengthening activities on 2 or more days a week
+2024-04-12 20:20:24,147 - app.logger - INFO - Job 5 is still running
+2024-04-12 20:20:24,193 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+1               1       2019  ...                        INC         INC75PLUS
+2               2       2013  ...                      AGEYR         AGEYR3544
+7               7       2019  ...                        GEN            FEMALE
+9               9       2011  ...                        INC         INCLESS15
+14             14       2019  ...                        EDU             EDUHS
+...           ...        ...  ...                        ...               ...
+18617       18617       2019  ...                       RACE           RACEBLK
+18623       18623       2017  ...                        EDU         EDUHSGRAD
+18634       18634       2015  ...                        EDU             EDUHS
+18640       18640       2017  ...                        INC           INC3550
+18647       18647       2019  ...                        EDU         EDUHSGRAD
+
+[1467 rows x 34 columns]
+2024-04-12 20:20:24,209 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   26.621429
+1                 Alaska   32.991892
+2                Arizona   34.325926
+3               Arkansas   26.326923
+4             California   34.770833
+5               Colorado   36.954167
+6            Connecticut   31.053333
+7               Delaware   32.269565
+8   District of Columbia   35.134615
+9                Florida   31.748649
+10               Georgia   32.270968
+11                  Guam   38.293333
+12                Hawaii   33.304348
+13                 Idaho   32.003448
+14              Illinois   32.875000
+15               Indiana   30.751515
+16                  Iowa   28.879412
+17                Kansas   28.940625
+18              Kentucky   28.981481
+19             Louisiana   27.406061
+20                 Maine   30.811111
+21              Maryland   31.121212
+22         Massachusetts   30.340741
+23              Michigan   32.468000
+24             Minnesota   33.476190
+25           Mississippi   27.478571
+26              Missouri   28.110000
+27               Montana   31.461290
+28              National   30.018519
+29              Nebraska   30.970370
+30                Nevada   32.292857
+31         New Hampshire   32.056000
+32            New Jersey   29.068750
+33            New Mexico   34.928000
+34              New York   32.852381
+35        North Carolina   30.945161
+36          North Dakota   30.012121
+37                  Ohio   31.875000
+38              Oklahoma   25.930769
+39                Oregon   31.245000
+40          Pennsylvania   31.265385
+41           Puerto Rico   14.778571
+42          Rhode Island   30.885185
+43        South Carolina   31.112000
+44          South Dakota   31.074286
+45             Tennessee   27.928000
+46                 Texas   29.808333
+47                  Utah   35.028571
+48               Vermont   30.683333
+49        Virgin Islands   30.900000
+50              Virginia   31.739130
+51            Washington   33.265517
+52         West Virginia   24.041379
+53             Wisconsin   31.638462
+54               Wyoming   31.319355
+2024-04-12 20:20:24,220 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   14.778571
+52         West Virginia   24.041379
+38              Oklahoma   25.930769
+3               Arkansas   26.326923
+0                Alabama   26.621429
+19             Louisiana   27.406061
+25           Mississippi   27.478571
+45             Tennessee   27.928000
+26              Missouri   28.110000
+16                  Iowa   28.879412
+17                Kansas   28.940625
+18              Kentucky   28.981481
+32            New Jersey   29.068750
+46                 Texas   29.808333
+36          North Dakota   30.012121
+28              National   30.018519
+22         Massachusetts   30.340741
+48               Vermont   30.683333
+15               Indiana   30.751515
+20                 Maine   30.811111
+42          Rhode Island   30.885185
+49        Virgin Islands   30.900000
+35        North Carolina   30.945161
+29              Nebraska   30.970370
+6            Connecticut   31.053333
+44          South Dakota   31.074286
+43        South Carolina   31.112000
+21              Maryland   31.121212
+39                Oregon   31.245000
+40          Pennsylvania   31.265385
+54               Wyoming   31.319355
+27               Montana   31.461290
+53             Wisconsin   31.638462
+50              Virginia   31.739130
+9                Florida   31.748649
+37                  Ohio   31.875000
+13                 Idaho   32.003448
+31         New Hampshire   32.056000
+7               Delaware   32.269565
+10               Georgia   32.270968
+30                Nevada   32.292857
+23              Michigan   32.468000
+34              New York   32.852381
+14              Illinois   32.875000
+1                 Alaska   32.991892
+51            Washington   33.265517
+12                Hawaii   33.304348
+24             Minnesota   33.476190
+2                Arizona   34.325926
+4             California   34.770833
+33            New Mexico   34.928000
+47                  Utah   35.028571
+8   District of Columbia   35.134615
+5               Colorado   36.954167
+11                  Guam   38.293333
+2024-04-12 20:20:24,226 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769233, 'Arkansas': 26.326923076923077, 'Alabama': 26.62142857142857, 'Louisiana': 27.406060606060606, 'Mississippi': 27.478571428571428, 'Tennessee': 27.928, 'Missouri': 28.11, 'Iowa': 28.879411764705882, 'Kansas': 28.940625, 'Kentucky': 28.98148148148148, 'New Jersey': 29.06875, 'Texas': 29.808333333333334, 'North Dakota': 30.01212121212121, 'National': 30.01851851851852, 'Massachusetts': 30.340740740740742, 'Vermont': 30.68333333333333, 'Indiana': 30.75151515151515, 'Maine': 30.811111111111114, 'Rhode Island': 30.885185185185183, 'Virgin Islands': 30.9, 'North Carolina': 30.94516129032258, 'Nebraska': 30.97037037037037, 'Connecticut': 31.053333333333335, 'South Dakota': 31.07428571428571, 'South Carolina': 31.112, 'Maryland': 31.12121212121212, 'Oregon': 31.244999999999997, 'Pennsylvania': 31.265384615384615, 'Wyoming': 31.31935483870968, 'Montana': 31.461290322580645, 'Wisconsin': 31.638461538461538, 'Virginia': 31.73913043478261, 'Florida': 31.74864864864865, 'Ohio': 31.875, 'Idaho': 32.00344827586207, 'New Hampshire': 32.056, 'Delaware': 32.2695652173913, 'Georgia': 32.270967741935486, 'Nevada': 32.29285714285714, 'Michigan': 32.468, 'New York': 32.852380952380955, 'Illinois': 32.875, 'Alaska': 32.991891891891896, 'Washington': 33.265517241379314, 'Hawaii': 33.30434782608695, 'Minnesota': 33.476190476190474, 'Arizona': 34.32592592592592, 'California': 34.770833333333336, 'New Mexico': 34.928000000000004, 'Utah': 35.02857142857143, 'District of Columbia': 35.13461538461539, 'Colorado': 36.954166666666666, 'Guam': 38.29333333333333}
+2024-04-12 20:20:24,231 - app.logger - INFO - Task 5 completed with result {'Puerto Rico': 14.778571428571428, 'West Virginia': 24.041379310344826, 'Oklahoma': 25.930769230769233, 'Arkansas': 26.326923076923077, 'Alabama': 26.62142857142857, 'Louisiana': 27.406060606060606, 'Mississippi': 27.478571428571428, 'Tennessee': 27.928, 'Missouri': 28.11, 'Iowa': 28.879411764705882, 'Kansas': 28.940625, 'Kentucky': 28.98148148148148, 'New Jersey': 29.06875, 'Texas': 29.808333333333334, 'North Dakota': 30.01212121212121, 'National': 30.01851851851852, 'Massachusetts': 30.340740740740742, 'Vermont': 30.68333333333333, 'Indiana': 30.75151515151515, 'Maine': 30.811111111111114, 'Rhode Island': 30.885185185185183, 'Virgin Islands': 30.9, 'North Carolina': 30.94516129032258, 'Nebraska': 30.97037037037037, 'Connecticut': 31.053333333333335, 'South Dakota': 31.07428571428571, 'South Carolina': 31.112, 'Maryland': 31.12121212121212, 'Oregon': 31.244999999999997, 'Pennsylvania': 31.265384615384615, 'Wyoming': 31.31935483870968, 'Montana': 31.461290322580645, 'Wisconsin': 31.638461538461538, 'Virginia': 31.73913043478261, 'Florida': 31.74864864864865, 'Ohio': 31.875, 'Idaho': 32.00344827586207, 'New Hampshire': 32.056, 'Delaware': 32.2695652173913, 'Georgia': 32.270967741935486, 'Nevada': 32.29285714285714, 'Michigan': 32.468, 'New York': 32.852380952380955, 'Illinois': 32.875, 'Alaska': 32.991891891891896, 'Washington': 33.265517241379314, 'Hawaii': 33.30434782608695, 'Minnesota': 33.476190476190474, 'Arizona': 34.32592592592592, 'California': 34.770833333333336, 'New Mexico': 34.928000000000004, 'Utah': 35.02857142857143, 'District of Columbia': 35.13461538461539, 'Colorado': 36.954166666666666, 'Guam': 38.29333333333333}
+2024-04-12 20:20:24,352 - app.logger - INFO - Job 5 is done
+2024-04-12 20:20:24,360 - app.logger - INFO - Executing task 6
+2024-04-12 20:20:24,360 - app.logger - INFO - Handling task states_mean, Percent of adults who report consuming vegetables less than one time daily
+2024-04-12 20:20:24,375 - app.logger - INFO - Job 6 is still running
+2024-04-12 20:20:24,435 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+4               4       2021  ...                       RACE           RACEHIS
+23             23       2019  ...                        EDU         EDUCOGRAD
+50             50       2019  ...                        EDU             EDUHS
+86             86       2021  ...                        INC           INC3550
+117           117       2019  ...                      AGEYR         AGEYR5564
+...           ...        ...  ...                        ...               ...
+18518       18518       2021  ...                        INC             INCNR
+18557       18557       2021  ...                       RACE           RACEASN
+18586       18586       2019  ...                        INC         INC75PLUS
+18622       18622       2019  ...                       RACE         RACE2PLUS
+18649       18649       2021  ...                       RACE           RACEBLK
+
+[932 rows x 34 columns]
+2024-04-12 20:20:24,444 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   21.950000
+1                 Alaska   21.206667
+2                Arizona   22.711111
+3               Arkansas   22.523077
+4             California   20.627778
+5               Colorado   20.707692
+6            Connecticut   22.823077
+7               Delaware   22.129412
+8   District of Columbia   18.430769
+9                Florida   18.600000
+10               Georgia   17.664706
+11                  Guam   26.757143
+12                Hawaii   21.950000
+13                 Idaho   19.726667
+14              Illinois   22.170000
+15               Indiana   23.919231
+16                  Iowa   22.950000
+17                Kansas   20.442857
+18              Kentucky   20.350000
+19             Louisiana   24.506250
+20                 Maine   14.858824
+21              Maryland   21.152941
+22         Massachusetts   17.653333
+23              Michigan   19.450000
+24             Minnesota   21.540000
+25           Mississippi   22.983333
+26              Missouri   20.425000
+27               Montana   18.417391
+28              National   20.400000
+29              Nebraska   21.330435
+30                Nevada   24.100000
+31         New Hampshire   16.938889
+32            New Jersey   21.054545
+33            New Mexico   24.535714
+34              New York   20.225000
+35        North Carolina   19.838889
+36          North Dakota   22.540909
+37                  Ohio   21.464706
+38              Oklahoma   21.545833
+39                Oregon   18.466667
+40          Pennsylvania   21.466667
+41           Puerto Rico   39.890000
+42          Rhode Island   22.393333
+43        South Carolina   19.900000
+44          South Dakota   17.988889
+45             Tennessee   20.425000
+46                 Texas   21.371429
+47                  Utah   21.876923
+48               Vermont   16.045455
+49        Virgin Islands   27.264286
+50              Virginia   21.046667
+51            Washington   20.236364
+52         West Virginia   20.053333
+53             Wisconsin   23.185714
+54               Wyoming   19.623077
+2024-04-12 20:20:24,454 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+20                 Maine   14.858824
+48               Vermont   16.045455
+31         New Hampshire   16.938889
+22         Massachusetts   17.653333
+10               Georgia   17.664706
+44          South Dakota   17.988889
+27               Montana   18.417391
+8   District of Columbia   18.430769
+39                Oregon   18.466667
+9                Florida   18.600000
+23              Michigan   19.450000
+54               Wyoming   19.623077
+13                 Idaho   19.726667
+35        North Carolina   19.838889
+43        South Carolina   19.900000
+52         West Virginia   20.053333
+34              New York   20.225000
+51            Washington   20.236364
+18              Kentucky   20.350000
+28              National   20.400000
+26              Missouri   20.425000
+45             Tennessee   20.425000
+17                Kansas   20.442857
+4             California   20.627778
+5               Colorado   20.707692
+50              Virginia   21.046667
+32            New Jersey   21.054545
+21              Maryland   21.152941
+1                 Alaska   21.206667
+29              Nebraska   21.330435
+46                 Texas   21.371429
+37                  Ohio   21.464706
+40          Pennsylvania   21.466667
+24             Minnesota   21.540000
+38              Oklahoma   21.545833
+47                  Utah   21.876923
+12                Hawaii   21.950000
+0                Alabama   21.950000
+7               Delaware   22.129412
+14              Illinois   22.170000
+42          Rhode Island   22.393333
+3               Arkansas   22.523077
+36          North Dakota   22.540909
+2                Arizona   22.711111
+6            Connecticut   22.823077
+16                  Iowa   22.950000
+25           Mississippi   22.983333
+53             Wisconsin   23.185714
+15               Indiana   23.919231
+30                Nevada   24.100000
+19             Louisiana   24.506250
+33            New Mexico   24.535714
+11                  Guam   26.757143
+49        Virgin Islands   27.264286
+41           Puerto Rico   39.890000
+2024-04-12 20:20:24,460 - app.logger - INFO - Mean for states_mean is {'Maine': 14.858823529411765, 'Vermont': 16.045454545454547, 'New Hampshire': 16.938888888888886, 'Massachusetts': 17.653333333333332, 'Georgia': 17.66470588235294, 'South Dakota': 17.98888888888889, 'Montana': 18.417391304347824, 'District of Columbia': 18.43076923076923, 'Oregon': 18.466666666666665, 'Florida': 18.599999999999998, 'Michigan': 19.45, 'Wyoming': 19.623076923076923, 'Idaho': 19.726666666666667, 'North Carolina': 19.83888888888889, 'South Carolina': 19.9, 'West Virginia': 20.053333333333335, 'New York': 20.224999999999998, 'Washington': 20.236363636363635, 'Kentucky': 20.349999999999998, 'National': 20.4, 'Missouri': 20.425, 'Tennessee': 20.425, 'Kansas': 20.442857142857143, 'California': 20.62777777777778, 'Colorado': 20.707692307692305, 'Virginia': 21.046666666666667, 'New Jersey': 21.054545454545455, 'Maryland': 21.15294117647059, 'Alaska': 21.206666666666663, 'Nebraska': 21.330434782608698, 'Texas': 21.37142857142857, 'Ohio': 21.46470588235294, 'Pennsylvania': 21.466666666666665, 'Minnesota': 21.54, 'Oklahoma': 21.545833333333334, 'Utah': 21.876923076923074, 'Hawaii': 21.95, 'Alabama': 21.95, 'Delaware': 22.129411764705882, 'Illinois': 22.169999999999998, 'Rhode Island': 22.39333333333333, 'Arkansas': 22.523076923076925, 'North Dakota': 22.54090909090909, 'Arizona': 22.711111111111112, 'Connecticut': 22.823076923076922, 'Iowa': 22.95, 'Mississippi': 22.983333333333334, 'Wisconsin': 23.185714285714283, 'Indiana': 23.91923076923077, 'Nevada': 24.1, 'Louisiana': 24.50625, 'New Mexico': 24.535714285714285, 'Guam': 26.757142857142856, 'Virgin Islands': 27.264285714285712, 'Puerto Rico': 39.89}
+2024-04-12 20:20:24,466 - app.logger - INFO - Task 6 completed with result {'Maine': 14.858823529411765, 'Vermont': 16.045454545454547, 'New Hampshire': 16.938888888888886, 'Massachusetts': 17.653333333333332, 'Georgia': 17.66470588235294, 'South Dakota': 17.98888888888889, 'Montana': 18.417391304347824, 'District of Columbia': 18.43076923076923, 'Oregon': 18.466666666666665, 'Florida': 18.599999999999998, 'Michigan': 19.45, 'Wyoming': 19.623076923076923, 'Idaho': 19.726666666666667, 'North Carolina': 19.83888888888889, 'South Carolina': 19.9, 'West Virginia': 20.053333333333335, 'New York': 20.224999999999998, 'Washington': 20.236363636363635, 'Kentucky': 20.349999999999998, 'National': 20.4, 'Missouri': 20.425, 'Tennessee': 20.425, 'Kansas': 20.442857142857143, 'California': 20.62777777777778, 'Colorado': 20.707692307692305, 'Virginia': 21.046666666666667, 'New Jersey': 21.054545454545455, 'Maryland': 21.15294117647059, 'Alaska': 21.206666666666663, 'Nebraska': 21.330434782608698, 'Texas': 21.37142857142857, 'Ohio': 21.46470588235294, 'Pennsylvania': 21.466666666666665, 'Minnesota': 21.54, 'Oklahoma': 21.545833333333334, 'Utah': 21.876923076923074, 'Hawaii': 21.95, 'Alabama': 21.95, 'Delaware': 22.129411764705882, 'Illinois': 22.169999999999998, 'Rhode Island': 22.39333333333333, 'Arkansas': 22.523076923076925, 'North Dakota': 22.54090909090909, 'Arizona': 22.711111111111112, 'Connecticut': 22.823076923076922, 'Iowa': 22.95, 'Mississippi': 22.983333333333334, 'Wisconsin': 23.185714285714283, 'Indiana': 23.91923076923077, 'Nevada': 24.1, 'Louisiana': 24.50625, 'New Mexico': 24.535714285714285, 'Guam': 26.757142857142856, 'Virgin Islands': 27.264285714285712, 'Puerto Rico': 39.89}
+2024-04-12 20:20:24,609 - app.logger - INFO - Job 6 is done
+2024-04-12 20:20:24,615 - app.logger - INFO - Executing task 7
+2024-04-12 20:20:24,615 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week
+2024-04-12 20:20:24,628 - app.logger - INFO - Job 7 is still running
+2024-04-12 20:20:24,678 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+56             56       2013  ...                       RACE           RACEHPI
+62             62       2019  ...                        GEN              MALE
+92             92       2011  ...                        INC           INC2535
+98             98       2013  ...                        EDU         EDUCOGRAD
+99             99       2019  ...                      AGEYR         AGEYR3544
+...           ...        ...  ...                        ...               ...
+18546       18546       2017  ...                        OVR           OVERALL
+18574       18574       2017  ...                      AGEYR         AGEYR5564
+18593       18593       2017  ...                      AGEYR         AGEYR4554
+18599       18599       2011  ...                        INC         INC75PLUS
+18604       18604       2011  ...                       RACE           RACENAA
+
+[1480 rows x 34 columns]
+2024-04-12 20:20:24,694 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   16.742424
+1                 Alaska   24.719048
+2                Arizona   23.145455
+3               Arkansas   18.031034
+4             California   23.638710
+5               Colorado   25.276923
+6            Connecticut   20.996000
+7               Delaware   20.372727
+8   District of Columbia   20.907692
+9                Florida   22.025000
+10               Georgia   21.181818
+11                  Guam   22.104545
+12                Hawaii   23.410526
+13                 Idaho   21.168750
+14              Illinois   21.680769
+15               Indiana   17.307143
+16                  Iowa   18.162963
+17                Kansas   17.663636
+18              Kentucky   15.831579
+19             Louisiana   16.542857
+20                 Maine   20.141176
+21              Maryland   20.307407
+22         Massachusetts   21.602941
+23              Michigan   20.961765
+24             Minnesota   21.228000
+25           Mississippi   15.505714
+26              Missouri   18.510000
+27               Montana   23.712121
+28              National   19.917857
+29              Nebraska   20.290476
+30                Nevada   20.793548
+31         New Hampshire   21.434483
+32            New Jersey   20.703333
+33            New Mexico   22.807143
+34              New York   19.935484
+35        North Carolina   19.938462
+36          North Dakota   17.856667
+37                  Ohio   18.909677
+38              Oklahoma   16.568571
+39                Oregon   22.550000
+40          Pennsylvania   20.046154
+41           Puerto Rico    9.909091
+42          Rhode Island   21.559091
+43        South Carolina   19.939394
+44          South Dakota   19.184615
+45             Tennessee   15.735484
+46                 Texas   18.911538
+47                  Utah   22.380769
+48               Vermont   21.804167
+49              Virginia   20.851613
+50            Washington   22.084615
+51         West Virginia   15.733333
+52             Wisconsin   22.307407
+53               Wyoming   23.276923
+2024-04-12 20:20:24,714 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico    9.909091
+25           Mississippi   15.505714
+51         West Virginia   15.733333
+45             Tennessee   15.735484
+18              Kentucky   15.831579
+19             Louisiana   16.542857
+38              Oklahoma   16.568571
+0                Alabama   16.742424
+15               Indiana   17.307143
+17                Kansas   17.663636
+36          North Dakota   17.856667
+3               Arkansas   18.031034
+16                  Iowa   18.162963
+26              Missouri   18.510000
+37                  Ohio   18.909677
+46                 Texas   18.911538
+44          South Dakota   19.184615
+28              National   19.917857
+34              New York   19.935484
+35        North Carolina   19.938462
+43        South Carolina   19.939394
+40          Pennsylvania   20.046154
+20                 Maine   20.141176
+29              Nebraska   20.290476
+21              Maryland   20.307407
+7               Delaware   20.372727
+32            New Jersey   20.703333
+30                Nevada   20.793548
+49              Virginia   20.851613
+8   District of Columbia   20.907692
+23              Michigan   20.961765
+6            Connecticut   20.996000
+13                 Idaho   21.168750
+10               Georgia   21.181818
+24             Minnesota   21.228000
+31         New Hampshire   21.434483
+42          Rhode Island   21.559091
+22         Massachusetts   21.602941
+14              Illinois   21.680769
+48               Vermont   21.804167
+9                Florida   22.025000
+50            Washington   22.084615
+11                  Guam   22.104545
+52             Wisconsin   22.307407
+47                  Utah   22.380769
+39                Oregon   22.550000
+33            New Mexico   22.807143
+2                Arizona   23.145455
+53               Wyoming   23.276923
+12                Hawaii   23.410526
+4             California   23.638710
+27               Montana   23.712121
+1                 Alaska   24.719048
+5               Colorado   25.276923
+2024-04-12 20:20:24,725 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 20:20:24,731 - app.logger - INFO - Task 7 completed with result {'Puerto Rico': 9.909090909090908, 'Mississippi': 15.505714285714287, 'West Virginia': 15.733333333333333, 'Tennessee': 15.735483870967743, 'Kentucky': 15.831578947368422, 'Louisiana': 16.54285714285714, 'Oklahoma': 16.568571428571428, 'Alabama': 16.742424242424242, 'Indiana': 17.307142857142857, 'Kansas': 17.663636363636364, 'North Dakota': 17.85666666666667, 'Arkansas': 18.03103448275862, 'Iowa': 18.16296296296296, 'Missouri': 18.509999999999998, 'Ohio': 18.90967741935484, 'Texas': 18.911538461538463, 'South Dakota': 19.184615384615384, 'National': 19.917857142857144, 'New York': 19.93548387096774, 'North Carolina': 19.93846153846154, 'South Carolina': 19.939393939393938, 'Pennsylvania': 20.046153846153846, 'Maine': 20.141176470588235, 'Nebraska': 20.29047619047619, 'Maryland': 20.307407407407407, 'Delaware': 20.37272727272727, 'New Jersey': 20.703333333333333, 'Nevada': 20.793548387096774, 'Virginia': 20.851612903225806, 'District of Columbia': 20.907692307692308, 'Michigan': 20.961764705882356, 'Connecticut': 20.996, 'Idaho': 21.16875, 'Georgia': 21.181818181818183, 'Minnesota': 21.228, 'New Hampshire': 21.43448275862069, 'Rhode Island': 21.55909090909091, 'Massachusetts': 21.602941176470587, 'Illinois': 21.680769230769233, 'Vermont': 21.804166666666664, 'Florida': 22.025000000000002, 'Washington': 22.084615384615386, 'Guam': 22.104545454545455, 'Wisconsin': 22.307407407407407, 'Utah': 22.38076923076923, 'Oregon': 22.549999999999997, 'New Mexico': 22.807142857142857, 'Arizona': 23.145454545454545, 'Wyoming': 23.27692307692308, 'Hawaii': 23.410526315789475, 'California': 23.638709677419353, 'Montana': 23.71212121212121, 'Alaska': 24.719047619047622, 'Colorado': 25.27692307692308}
+2024-04-12 20:20:24,854 - app.logger - INFO - Job 7 is done
+2024-04-12 20:20:24,875 - app.logger - INFO - Executing task 8
+2024-04-12 20:20:24,886 - app.logger - INFO - Handling task states_mean, Percent of adults aged 18 years and older who have an overweight classification
+2024-04-12 20:20:24,897 - app.logger - INFO - Job 8 is still running
+2024-04-12 20:20:24,939 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+18             18       2022  ...                      AGEYR         AGEYR3544
+22             22       2014  ...                        OVR           OVERALL
+24             24       2022  ...                        EDU         EDUHSGRAD
+27             27       2020  ...                       RACE           RACEOTH
+32             32       2012  ...                        EDU          EDUCOTEC
+...           ...        ...  ...                        ...               ...
+18631       18631       2012  ...                        INC           INC5075
+18637       18637       2018  ...                       RACE           RACEOTH
+18641       18641       2016  ...                       RACE           RACEBLK
+18643       18643       2020  ...                        EDU         EDUCOGRAD
+18644       18644       2019  ...                        INC           INC1525
+
+[3701 rows x 34 columns]
+2024-04-12 20:20:24,958 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   34.155172
+1                 Alaska   35.902778
+2                Arizona   35.404688
+3               Arkansas   32.995161
+4             California   35.724590
+5               Colorado   34.785366
+6            Connecticut   35.754286
+7               Delaware   34.673846
+8   District of Columbia   30.746875
+9                Florida   34.273333
+10               Georgia   34.301266
+11                  Guam   34.485455
+12                Hawaii   34.004688
+13                 Idaho   35.190909
+14              Illinois   33.521875
+15               Indiana   33.587013
+16                  Iowa   33.964557
+17                Kansas   34.056250
+18              Kentucky   33.071642
+19             Louisiana   33.179310
+20                 Maine   34.316129
+21              Maryland   34.528395
+22         Massachusetts   34.620312
+23              Michigan   33.737349
+24             Minnesota   35.545763
+25           Mississippi   34.315625
+26              Missouri   32.762687
+27               Montana   36.178261
+28              National   35.085938
+29              Nebraska   35.691429
+30                Nevada   36.358333
+31         New Hampshire   34.844156
+32            New Jersey   36.080597
+33            New Mexico   35.863492
+34              New York   34.860000
+35        North Carolina   34.377632
+36          North Dakota   34.891667
+37                  Ohio   33.257534
+38              Oklahoma   34.058333
+39                Oregon   34.142187
+40          Pennsylvania   34.543548
+41           Puerto Rico   36.986364
+42          Rhode Island   35.178788
+43        South Carolina   33.259091
+44          South Dakota   35.195652
+45             Tennessee   34.109459
+46                 Texas   34.376923
+47                  Utah   34.195082
+48               Vermont   33.118182
+49        Virgin Islands   33.296875
+50              Virginia   34.458824
+51            Washington   33.968421
+52         West Virginia   33.861111
+53             Wisconsin   34.155422
+54               Wyoming   35.516901
+2024-04-12 20:20:24,962 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+8   District of Columbia   30.746875
+26              Missouri   32.762687
+3               Arkansas   32.995161
+18              Kentucky   33.071642
+48               Vermont   33.118182
+19             Louisiana   33.179310
+37                  Ohio   33.257534
+43        South Carolina   33.259091
+49        Virgin Islands   33.296875
+14              Illinois   33.521875
+15               Indiana   33.587013
+23              Michigan   33.737349
+52         West Virginia   33.861111
+16                  Iowa   33.964557
+51            Washington   33.968421
+12                Hawaii   34.004688
+17                Kansas   34.056250
+38              Oklahoma   34.058333
+45             Tennessee   34.109459
+39                Oregon   34.142187
+0                Alabama   34.155172
+53             Wisconsin   34.155422
+47                  Utah   34.195082
+9                Florida   34.273333
+10               Georgia   34.301266
+25           Mississippi   34.315625
+20                 Maine   34.316129
+46                 Texas   34.376923
+35        North Carolina   34.377632
+50              Virginia   34.458824
+11                  Guam   34.485455
+21              Maryland   34.528395
+40          Pennsylvania   34.543548
+22         Massachusetts   34.620312
+7               Delaware   34.673846
+5               Colorado   34.785366
+31         New Hampshire   34.844156
+34              New York   34.860000
+36          North Dakota   34.891667
+28              National   35.085938
+42          Rhode Island   35.178788
+13                 Idaho   35.190909
+44          South Dakota   35.195652
+2                Arizona   35.404688
+54               Wyoming   35.516901
+24             Minnesota   35.545763
+29              Nebraska   35.691429
+4             California   35.724590
+6            Connecticut   35.754286
+33            New Mexico   35.863492
+1                 Alaska   35.902778
+32            New Jersey   36.080597
+27               Montana   36.178261
+30                Nevada   36.358333
+41           Puerto Rico   36.986364
+2024-04-12 20:20:24,963 - app.logger - INFO - Mean for states_mean is {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 20:20:24,963 - app.logger - INFO - Task 8 completed with result {'District of Columbia': 30.746875, 'Missouri': 32.76268656716418, 'Arkansas': 32.99516129032258, 'Kentucky': 33.071641791044776, 'Vermont': 33.118181818181824, 'Louisiana': 33.179310344827584, 'Ohio': 33.25753424657535, 'South Carolina': 33.25909090909091, 'Virgin Islands': 33.296875, 'Illinois': 33.521875, 'Indiana': 33.58701298701298, 'Michigan': 33.73734939759036, 'West Virginia': 33.861111111111114, 'Iowa': 33.96455696202531, 'Washington': 33.96842105263158, 'Hawaii': 34.0046875, 'Kansas': 34.05625, 'Oklahoma': 34.05833333333333, 'Tennessee': 34.10945945945946, 'Oregon': 34.1421875, 'Alabama': 34.1551724137931, 'Wisconsin': 34.15542168674699, 'Utah': 34.19508196721311, 'Florida': 34.27333333333333, 'Georgia': 34.30126582278481, 'Mississippi': 34.315625, 'Maine': 34.31612903225806, 'Texas': 34.37692307692308, 'North Carolina': 34.377631578947366, 'Virginia': 34.45882352941176, 'Guam': 34.485454545454544, 'Maryland': 34.528395061728396, 'Pennsylvania': 34.54354838709677, 'Massachusetts': 34.6203125, 'Delaware': 34.673846153846156, 'Colorado': 34.78536585365854, 'New Hampshire': 34.84415584415584, 'New York': 34.86, 'North Dakota': 34.891666666666666, 'National': 35.0859375, 'Rhode Island': 35.17878787878788, 'Idaho': 35.19090909090909, 'South Dakota': 35.19565217391305, 'Arizona': 35.4046875, 'Wyoming': 35.5169014084507, 'Minnesota': 35.545762711864406, 'Nebraska': 35.691428571428574, 'California': 35.72459016393442, 'Connecticut': 35.754285714285714, 'New Mexico': 35.86349206349207, 'Alaska': 35.90277777777778, 'New Jersey': 36.080597014925374, 'Montana': 36.17826086956522, 'Nevada': 36.358333333333334, 'Puerto Rico': 36.986363636363635}
+2024-04-12 20:20:25,129 - app.logger - INFO - Job 8 is done
+2024-04-12 20:20:25,134 - app.logger - INFO - Executing task 9
+2024-04-12 20:20:25,140 - app.logger - INFO - Handling task states_mean, Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+2024-04-12 20:20:25,173 - app.logger - INFO - Job 9 is still running
+2024-04-12 20:20:25,225 - app.logger - INFO - Filtered data for states_mean is        Unnamed: 0  YearStart  ...  StratificationCategoryId1 StratificationID1
+26             26       2019  ...                       RACE           RACEASN
+41             41       2017  ...                        INC           INC2535
+47             47       2013  ...                       RACE           RACEBLK
+55             55       2011  ...                        EDU         EDUHSGRAD
+63             63       2011  ...                      AGEYR         AGEYR5564
+...           ...        ...  ...                        ...               ...
+18620       18620       2011  ...                        EDU         EDUHSGRAD
+18625       18625       2017  ...                        OVR           OVERALL
+18628       18628       2015  ...                       RACE           RACEOTH
+18633       18633       2017  ...                        INC           INC2535
+18645       18645       2017  ...                        GEN            FEMALE
+
+[1525 rows x 34 columns]
+2024-04-12 20:20:25,240 - app.logger - INFO - Mean for states_mean is             LocationDesc  Data_Value
+0                Alabama   43.403571
+1                 Alaska   55.296970
+2                Arizona   51.605556
+3               Arkansas   45.542424
+4             California   55.820588
+5               Colorado   56.774286
+6            Connecticut   49.978571
+7               Delaware   49.748148
+8   District of Columbia   50.876923
+9                Florida   51.437931
+10               Georgia   46.100000
+11                  Guam   44.986667
+12                Hawaii   56.760000
+13                 Idaho   57.753333
+14              Illinois   49.744000
+15               Indiana   44.376923
+16                  Iowa   47.721739
+17                Kansas   47.119355
+18              Kentucky   46.576000
+19             Louisiana   44.630303
+20                 Maine   52.446667
+21              Maryland   47.823077
+22         Massachusetts   50.996970
+23              Michigan   50.534375
+24             Minnesota   51.147222
+25           Mississippi   42.523333
+26              Missouri   48.923810
+27               Montana   55.009091
+28              National   48.532143
+29              Nebraska   49.200000
+30                Nevada   50.811538
+31         New Hampshire   52.581481
+32            New Jersey   48.895000
+33            New Mexico   55.781481
+34              New York   47.045833
+35        North Carolina   47.940625
+36          North Dakota   45.515385
+37                  Ohio   48.273913
+38              Oklahoma   43.755172
+39                Oregon   57.200000
+40          Pennsylvania   48.162222
+41           Puerto Rico   37.320000
+42          Rhode Island   46.251613
+43        South Carolina   47.976471
+44          South Dakota   48.526923
+45             Tennessee   42.825926
+46                 Texas   46.262963
+47                  Utah   52.639394
+48               Vermont   57.480645
+49        Virgin Islands   49.800000
+50              Virginia   48.936667
+51            Washington   55.012903
+52         West Virginia   48.696000
+53             Wisconsin   55.104545
+54               Wyoming   49.500000
+2024-04-12 20:20:25,250 - app.logger - INFO - Sorted mean for states_mean is             LocationDesc  Data_Value
+41           Puerto Rico   37.320000
+25           Mississippi   42.523333
+45             Tennessee   42.825926
+0                Alabama   43.403571
+38              Oklahoma   43.755172
+15               Indiana   44.376923
+19             Louisiana   44.630303
+11                  Guam   44.986667
+36          North Dakota   45.515385
+3               Arkansas   45.542424
+10               Georgia   46.100000
+42          Rhode Island   46.251613
+46                 Texas   46.262963
+18              Kentucky   46.576000
+34              New York   47.045833
+17                Kansas   47.119355
+16                  Iowa   47.721739
+21              Maryland   47.823077
+35        North Carolina   47.940625
+43        South Carolina   47.976471
+40          Pennsylvania   48.162222
+37                  Ohio   48.273913
+44          South Dakota   48.526923
+28              National   48.532143
+52         West Virginia   48.696000
+32            New Jersey   48.895000
+26              Missouri   48.923810
+50              Virginia   48.936667
+29              Nebraska   49.200000
+54               Wyoming   49.500000
+14              Illinois   49.744000
+7               Delaware   49.748148
+49        Virgin Islands   49.800000
+6            Connecticut   49.978571
+23              Michigan   50.534375
+30                Nevada   50.811538
+8   District of Columbia   50.876923
+22         Massachusetts   50.996970
+24             Minnesota   51.147222
+9                Florida   51.437931
+2                Arizona   51.605556
+20                 Maine   52.446667
+31         New Hampshire   52.581481
+47                  Utah   52.639394
+27               Montana   55.009091
+51            Washington   55.012903
+53             Wisconsin   55.104545
+1                 Alaska   55.296970
+33            New Mexico   55.781481
+4             California   55.820588
+12                Hawaii   56.760000
+5               Colorado   56.774286
+39                Oregon   57.200000
+48               Vermont   57.480645
+13                 Idaho   57.753333
+2024-04-12 20:20:25,256 - app.logger - INFO - Mean for states_mean is {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 20:20:25,262 - app.logger - INFO - Task 9 completed with result {'Puerto Rico': 37.32, 'Mississippi': 42.52333333333333, 'Tennessee': 42.82592592592592, 'Alabama': 43.403571428571425, 'Oklahoma': 43.755172413793105, 'Indiana': 44.37692307692308, 'Louisiana': 44.630303030303025, 'Guam': 44.986666666666665, 'North Dakota': 45.51538461538462, 'Arkansas': 45.54242424242425, 'Georgia': 46.1, 'Rhode Island': 46.251612903225805, 'Texas': 46.26296296296296, 'Kentucky': 46.576, 'New York': 47.04583333333333, 'Kansas': 47.119354838709675, 'Iowa': 47.72173913043478, 'Maryland': 47.823076923076925, 'North Carolina': 47.940625, 'South Carolina': 47.976470588235294, 'Pennsylvania': 48.162222222222226, 'Ohio': 48.27391304347826, 'South Dakota': 48.526923076923076, 'National': 48.53214285714286, 'West Virginia': 48.696000000000005, 'New Jersey': 48.894999999999996, 'Missouri': 48.92380952380953, 'Virginia': 48.93666666666666, 'Nebraska': 49.199999999999996, 'Wyoming': 49.5, 'Illinois': 49.744, 'Delaware': 49.74814814814815, 'Virgin Islands': 49.8, 'Connecticut': 49.978571428571435, 'Michigan': 50.534375, 'Nevada': 50.81153846153846, 'District of Columbia': 50.87692307692308, 'Massachusetts': 50.9969696969697, 'Minnesota': 51.14722222222222, 'Florida': 51.43793103448276, 'Arizona': 51.605555555555554, 'Maine': 52.446666666666665, 'New Hampshire': 52.58148148148148, 'Utah': 52.63939393939393, 'Montana': 55.00909090909091, 'Washington': 55.012903225806454, 'Wisconsin': 55.10454545454545, 'Alaska': 55.2969696969697, 'New Mexico': 55.78148148148148, 'California': 55.82058823529412, 'Hawaii': 56.76, 'Colorado': 56.77428571428571, 'Oregon': 57.2, 'Vermont': 57.480645161290326, 'Idaho': 57.75333333333333}
+2024-04-12 20:20:25,391 - app.logger - INFO - Job 9 is done
