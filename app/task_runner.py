@@ -1,16 +1,12 @@
-from queue import Queue
-from threading import Thread, Event
-from flask import request, jsonify
 import json
-import time
 import os
+from queue import Queue
+from threading import Thread, Event, Lock
+from flask import jsonify
 from app import DataIngestor
 from app.logger import logger
-from threading import Lock
 
-data_ingestor = DataIngestor("./nutrition_activity_obesity_usa_subset.csv")
-
-def handleTask(data, type, state = None):
+def handleTask(data, type, data_ingestor, state = None):
     logger.info(f"Handling task {type}, {data["question"]}")
     if type == "states_mean":
         filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
@@ -30,7 +26,6 @@ def handleTask(data, type, state = None):
             mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
             sorted_mean = mean.sort_values(ascending=True).head(5).to_dict()
             return sorted_mean
-            
         elif data["question"] in data_ingestor.questions_best_is_max:
             filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
             mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
@@ -79,11 +74,10 @@ def handleTask(data, type, state = None):
         for _, row in mean_by_category.iterrows():
             key = tuple(row[['StratificationCategory1', 'Stratification1']])
             value = row['Data_Value']
-            res[str(key)] = value    
+            res[str(key)] = value
         return { state: res }
     else:
-        return "Invalid task type"       
-        
+        return "Invalid task type"
 
 class Task:
     def __init__(self, job_id, task_type, data):
@@ -91,19 +85,17 @@ class Task:
         self.task_type = task_type
         self.data = data
 
-    def execute(self):
+    def execute(self, data_ingestor):
         logger.info(f"Executing task {self.job_id}")
-        return handleTask(self.data, self.task_type, self.data.get("state", None))
+        return handleTask(self.data, self.task_type, data_ingestor, self.data.get("state", None))
 
 class ThreadPool:
     def __init__(self):
         self.tasks = Queue()
-        self.doneTasks = dict()
-        self.pendingTasks = []
+        self.done_tasks = {}
         self.threads = []
-        self.lock = Lock()
         self.shutdown_event = Event()
-        self.job_id = 0
+        self.data_ingestor = DataIngestor("./nutrition_activity_obesity_usa_subset.csv")
 
         if "TP_NUM_OF_THREADS" in os.environ:
             self.num_threads = int(os.environ["TP_NUM_OF_THREADS"])
@@ -111,16 +103,22 @@ class ThreadPool:
             self.num_threads = os.cpu_count()
 
         for i in range(self.num_threads):
-            self.threads.append(TaskRunner(self.tasks, self.lock, self.doneTasks, self.pendingTasks))
+            self.threads.append(TaskRunner(self.tasks, self.done_tasks, self.data_ingestor))
 
     def start(self):
         for thread in self.threads:
             thread.start()
 
+    def get_task_result(self, job_id):
+        result = None
+        with open(os.path.join("results", f"{job_id}.json"), "r") as f:
+            result = json.load(f)
+        return result
+
     def add_task(self, data, job_id, task_type):
         task = Task(job_id, task_type, data)
         self.tasks.put(task)
-        self.pendingTasks.append(job_id)
+        self.done_tasks[job_id] = False
 
     def shutdown(self):
         self.shutdown_event.set()
@@ -129,16 +127,15 @@ class ThreadPool:
 
     def graceful_shutdown(self):
         self.shutdown()
-        
+
 class TaskRunner(Thread):
-    def __init__(self, queue, lock, doneTasks, pendingTasks):
+    def __init__(self, queue, done_tasks, data_ingestor):
         super().__init__()
         self.shutdown_event = Event()
         self.done = Event()
         self.queue = queue
-        self.lock = lock
-        self.doneTasks = doneTasks
-        self.pendingTasks = pendingTasks
+        self.done_tasks = done_tasks
+        self.data_ingestor = data_ingestor
 
     def run(self):
         logger.info("Thread started")
@@ -150,23 +147,20 @@ class TaskRunner(Thread):
                     return
                 elif task.task_type == "jobs":
                     tasksLeft = dict()
-                    for job_id in self.pendingTasks:
-                        if job_id not in self.doneTasks:
-                            tasksLeft[f"job_id_{job_id}"] = "running"
+                    for key in self.done_tasks:
+                        if self.done_tasks[key] == False:
+                            tasksLeft[key] = "running"
                         else:
-                            tasksLeft[f"job_id_{job_id}"] = "done"
+                            tasksLeft[key] = "done"
                     result = jsonify({"status": "done", "data": tasksLeft})
                 elif task.task_type == "num_jobs":
-                    result = len(self.pendingTasks) - len(self.doneTasks)
+                    result = len(filter(lambda x: x == True, self.doneTasks.values())) - len(filter(lambda x: x == True, self.doneTasks.values()))
                 else:
-                    result = task.execute()
-                    self.done.clear()
+                    result = task.execute(self.data_ingestor)
                     logger.info(f"Task {task.job_id} completed with result {result}")
-                    self.queue.task_done()
-                    self.done.set()
-                    with self.lock:
-                        with open("results/{task.job_id}.json", "w") as f:
-                            json.dump(result, f)
+                    with open(os.path.join("results", f"{task.job_id}.json"), "w") as f:
+                        json.dump(result, f)
+                        self.done_tasks[task.job_id] = True
 
 
     def shutdown(self):
@@ -175,5 +169,3 @@ class TaskRunner(Thread):
     def graceful_shutdown(self):
         self.done.wait()
         self.shutdown()
-
-

@@ -13,7 +13,6 @@ def post_endpoint():
     if request.method == 'POST':
         # Assuming the request contains JSON data
         data = request.json
-        print(f"got data in post {data}")
 
         # Process the received data
         # For demonstration purposes, just echoing back the received data
@@ -27,26 +26,24 @@ def post_endpoint():
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
-    print(f"JobID is {job_id}")
     # Check if job_id is valid
-    if not job_id in os.listdir("results") and not job_id in webserver.tasks_runner.runningTasks:
+    if int(job_id) not in webserver.tasks_runner.done_tasks:
         logger.error(f"Invalid job_id {job_id}")
         return jsonify({'status': 'error', 'reason': 'Invalid job_id'})
 
     # If job is done, return the result
-    logger.info(f"Job {job_id} is done")
-    if job_id in os.listdir("results"):
-        with open(f"results/{job_id}.json", "r") as f:
-            with webserver.tasks_runner.lock:
-                return jsonify({'status': 'done', 'data': json.load(f)})
+    if webserver.tasks_runner.done_tasks[int(job_id)] == True:
+        logger.info(f"Job {job_id} is done")
+        return jsonify({"status" : "done", "data": webserver.tasks_runner.get_task_result(int(job_id))})
+    
+    logger.info(f"Job {job_id} is still running")
+    return jsonify({'status': 'running'})
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
     # Get request data
     data = request.json
-    print(f"Got request {data}")
 
-    # TODO
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
@@ -60,13 +57,11 @@ def states_mean_request():
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -79,13 +74,11 @@ def state_mean_request():
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -97,13 +90,11 @@ def best5_request():
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -115,13 +106,11 @@ def worst5_request():
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -133,13 +122,11 @@ def global_mean_request():
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -151,13 +138,11 @@ def diff_from_mean_request():
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -169,13 +154,11 @@ def state_diff_from_mean_request():
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
@@ -187,13 +170,11 @@ def mean_by_category_request():
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
-    # TODO
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
     # Return associated job_id
     data = request.json
-    print(f"Got request {data}")
 
     job_id = webserver.job_counter
     webserver.job_counter += 1
