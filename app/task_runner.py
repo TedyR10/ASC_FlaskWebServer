@@ -1,5 +1,7 @@
 from queue import Queue
 from threading import Thread, Event
+from flask import request, jsonify
+import json
 import time
 import os
 from app import DataIngestor
@@ -9,17 +11,79 @@ from threading import Lock
 data_ingestor = DataIngestor("./nutrition_activity_obesity_usa_subset.csv")
 
 def handleTask(data, type, state = None):
-    logger.info(f"Handling task {type}, {data['question']}")
-    if type == 'states_mean':
-        filtered_data = data_ingestor.data[data_ingestor.data['Question'] == data['question']]
-        logger.info(f"Filtered data for {type} is {filtered_data}")
-        mean = filtered_data.groupby('LocationDesc')['Data_Value'].mean().reset_index()
-        logger.info(f"Mean for {type} is {mean}")
-        sorted_mean = mean.sort_values(by='Data_Value', ascending=True)
-        logger.info(f"Sorted mean for {type} is {sorted_mean}")
-        res = sorted_mean.set_index('LocationDesc').to_dict()['Data_Value']
+    logger.info(f"Handling task {type}, {data["question"]}")
+    if type == "states_mean":
+        filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+        mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean().reset_index()
+        sorted_mean = mean.sort_values(by="Data_Value", ascending=True)
+        res = dict(zip(sorted_mean["LocationDesc"], sorted_mean["Data_Value"]))
         logger.info(f"Mean for {type} is {res}")
         return res
+    elif type == "state_mean":
+        filtered_data = data_ingestor.data[(data_ingestor.data["Question"] == data["question"]) & (data_ingestor.data["LocationDesc"] == state)]
+        mean = filtered_data["Data_Value"].mean()
+        logger.info(f"Mean for {type} is {mean}")
+        return { state : mean }
+    elif type == "best5":
+        if data["question"] in data_ingestor.questions_best_is_min:
+            filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+            mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
+            sorted_mean = mean.sort_values(ascending=True).head(5).to_dict()
+            return sorted_mean
+            
+        elif data["question"] in data_ingestor.questions_best_is_max:
+            filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+            mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
+            sorted_mean = mean.sort_values(ascending=False).head(5).to_dict()
+            return sorted_mean
+    elif type == "worst5":
+        if data["question"] in data_ingestor.questions_best_is_min:
+            filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+            mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
+            sorted_mean = mean.sort_values(ascending=False).head(5).to_dict()
+            return sorted_mean
+        elif data["question"] in data_ingestor.questions_best_is_max:
+            filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+            mean = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
+            sorted_mean = mean.sort_values(ascending=True).head(5).to_dict()
+            return sorted_mean
+    elif type == "global_mean":
+        filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+        mean = filtered_data["Data_Value"].mean()
+        return {"global_mean": mean}
+    elif type == "diff_from_mean":
+        filtered_data = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]
+        global_mean = filtered_data["Data_Value"].mean()
+        state_means = filtered_data.groupby("LocationDesc")["Data_Value"].mean()
+        differences = global_mean - state_means
+        diff_dict = differences.to_dict()
+        return diff_dict
+    elif type == "state_diff_from_mean":
+        filtered_data = data_ingestor.data[(data_ingestor.data["Question"] == data["question"]) & (data_ingestor.data["LocationDesc"] == state)]
+        global_mean = data_ingestor.data[data_ingestor.data["Question"] == data["question"]]["Data_Value"].mean()
+        state_mean = filtered_data["Data_Value"].mean()
+        return { state : global_mean - state_mean }
+    elif type == "mean_by_category":
+        filtered_data = data_ingestor.data[(data_ingestor.data["Question"] == data["question"])]
+        mean = filtered_data.groupby(["LocationDesc", "StratificationCategory1", "Stratification1"])["Data_Value"].mean().reset_index()
+        res = {}
+        for _, row in mean.iterrows():
+            key = tuple(row[['LocationDesc', 'StratificationCategory1', 'Stratification1']])
+            value = row['Data_Value']
+            res[str(key)] = value
+        return res
+    elif type == "state_mean_by_category":
+        filtered_data = data_ingestor.data[(data_ingestor.data["Question"] == data["question"]) & (data_ingestor.data["LocationDesc"] == state)]
+        mean_by_category = filtered_data.groupby(["StratificationCategory1", "Stratification1"])["Data_Value"].mean().reset_index()
+        res = {}
+        for _, row in mean_by_category.iterrows():
+            key = tuple(row[['StratificationCategory1', 'Stratification1']])
+            value = row['Data_Value']
+            res[str(key)] = value    
+        return { state: res }
+    else:
+        return "Invalid task type"       
+        
 
 class Task:
     def __init__(self, job_id, task_type, data):
@@ -29,19 +93,10 @@ class Task:
 
     def execute(self):
         logger.info(f"Executing task {self.job_id}")
-        return handleTask(self.data, self.task_type, self.data.get('state', None))
+        return handleTask(self.data, self.task_type, self.data.get("state", None))
 
 class ThreadPool:
     def __init__(self):
-        # You must implement a ThreadPool of TaskRunners
-        # Your ThreadPool should check if an environment variable TP_NUM_OF_THREADS is defined
-        # If the env var is defined, that is the number of threads to be used by the thread pool
-        # Otherwise, you are to use what the hardware concurrency allows
-        # You are free to write your implementation as you see fit, but
-        # You must NOT:
-        #   * create more threads than the hardware concurrency allows
-        #   * recreate threads for each task
-        
         self.tasks = Queue()
         self.doneTasks = dict()
         self.pendingTasks = []
@@ -50,8 +105,8 @@ class ThreadPool:
         self.shutdown_event = Event()
         self.job_id = 0
 
-        if 'TP_NUM_OF_THREADS' in os.environ:
-            self.num_threads = int(os.environ['TP_NUM_OF_THREADS'])
+        if "TP_NUM_OF_THREADS" in os.environ:
+            self.num_threads = int(os.environ["TP_NUM_OF_THREADS"])
         else:
             self.num_threads = os.cpu_count()
 
@@ -90,17 +145,28 @@ class TaskRunner(Thread):
         while not self.shutdown_event.is_set():
             while not self.queue.empty():
                 task = self.queue.get()
-                result = task.execute()
-                self.done.clear()
-                logger.info(f"Task {task.job_id} completed with result {result}")
-                self.queue.task_done()
-                self.done.set()
-                # Read here https://stackoverflow.com/questions/6953351/thread-safety-in-pythons-dictionary
-                # That multiple operations on a dictionary might not be thread safe
-                # For peace of mind, I will lock the dictionary before updating it
-                with self.lock:
-                    self.doneTasks[task.job_id] = result
-                    self.pendingTasks.remove(task.job_id)
+                if task.task_type == "graceful_shutdown":
+                    self.graceful_shutdown()
+                    return
+                elif task.task_type == "jobs":
+                    tasksLeft = dict()
+                    for job_id in self.pendingTasks:
+                        if job_id not in self.doneTasks:
+                            tasksLeft[f"job_id_{job_id}"] = "running"
+                        else:
+                            tasksLeft[f"job_id_{job_id}"] = "done"
+                    result = jsonify({"status": "done", "data": tasksLeft})
+                elif task.task_type == "num_jobs":
+                    result = len(self.pendingTasks) - len(self.doneTasks)
+                else:
+                    result = task.execute()
+                    self.done.clear()
+                    logger.info(f"Task {task.job_id} completed with result {result}")
+                    self.queue.task_done()
+                    self.done.set()
+                    with self.lock:
+                        with open("results/{task.job_id}.json", "w") as f:
+                            json.dump(result, f)
 
 
     def shutdown(self):
