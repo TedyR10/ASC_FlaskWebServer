@@ -1,15 +1,11 @@
 from app import webserver
 from flask import request, jsonify
-from logging.handlers import RotatingFileHandler
-import time
 from app.logger import logger
-
-import os
-import json
 
 # Example endpoint definition
 @webserver.route('/api/post_endpoint', methods=['POST'])
 def post_endpoint():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     if request.method == 'POST':
         # Assuming the request contains JSON data
         data = request.json
@@ -20,27 +16,28 @@ def post_endpoint():
 
         # Sending back a JSON response
         return jsonify(response)
-    else:
-        # Method Not Allowed
-        return jsonify({"error": "Method not allowed"}), 405
+    # Method Not Allowed
+    return jsonify({"error": "Method not allowed"}), 405
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
+    """Get endpoint that returns the result of a specific job_id"""
     # Check if job_id is valid
     if int(job_id) not in webserver.tasks_runner.done_tasks:
-        logger.error(f"Invalid job_id {job_id}")
+        logger.error("Invalid job_id %s", job_id)
         return jsonify({'status': 'error', 'reason': 'Invalid job_id'})
 
     # If job is done, return the result
-    if webserver.tasks_runner.done_tasks[int(job_id)] == True:
-        logger.info(f"Job {job_id} is done")
+    if webserver.tasks_runner.done_tasks[int(job_id)] is True:
+        logger.info("Job %s is done", job_id)
         return jsonify({"status" : "done", "data": webserver.tasks_runner.get_task_result(int(job_id))})
-    
-    logger.info(f"Job {job_id} is still running")
+
+    logger.info("Job %s is still running", job_id)
     return jsonify({'status': 'running'})
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     data = request.json
 
@@ -57,6 +54,7 @@ def states_mean_request():
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -74,6 +72,7 @@ def state_mean_request():
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -90,6 +89,7 @@ def best5_request():
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -102,10 +102,11 @@ def worst5_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'worst5')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -118,10 +119,11 @@ def global_mean_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'global_mean')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -134,10 +136,11 @@ def diff_from_mean_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'diff_from_mean')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -150,10 +153,11 @@ def state_diff_from_mean_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'state_diff_from_mean')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -166,10 +170,11 @@ def mean_by_category_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'mean_by_category')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
+    """Post endpoint that receives JSON data and returns it back as a response"""
     # Get request data
     # Register job. Don't wait for task to finish
     # Increment job_id counter
@@ -182,12 +187,13 @@ def state_mean_by_category_request():
     # Add task to the task runner
     webserver.tasks_runner.add_task(data, job_id, 'state_mean_by_category')
 
-    return jsonify({"job_id": job_id})  
+    return jsonify({"job_id": job_id})
 
 # You can check localhost in your browser to see what this displays
 @webserver.route('/')
 @webserver.route('/index')
 def index():
+    """Home page of the webserver displaying available routes"""
     routes = get_defined_routes()
     msg = f"Hello, World!\n Interact with the webserver using one of the defined routes:\n"
 
@@ -200,6 +206,7 @@ def index():
     return msg
 
 def get_defined_routes():
+    """Get all defined routes in the webserver"""
     routes = []
     for rule in webserver.url_map.iter_rules():
         methods = ', '.join(rule.methods)
